@@ -193,5 +193,8 @@ body {
   width: 300px;
   justify-content: space-between;
 }
+.hero h1 {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+}
 
 /*# sourceMappingURL=style.css.map */
