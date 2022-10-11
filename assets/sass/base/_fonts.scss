@@ -1,11 +1,18 @@
 @font-face {
-    font-family: "Help Me";
-    src: url("./../fonts/HelpMe.woff2") format("woff2"), url("./../fonts/HelpMe.woff") format("woff");
+    font-family: 'October Crow';
+    src: url('../fonts/OctoberCrow.woff2') format('woff2'),
+        url('../fonts/OctoberCrow.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-html {
-    font-family: "Help Me";
+
+body{
+    font-size: 18px;
+}
+
+h1{
+    font-family: $title;
+    font-size: 5em;
 }
