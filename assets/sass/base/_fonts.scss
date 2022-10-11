@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&display=swap');
-
-html {
-font-family: 'Courier New', Courier, monospace;
+@font-face {
+    font-family: "Help Me";
+    src: url("./../fonts/HelpMe.woff2") format("woff2"), url("./../fonts/HelpMe.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-h1 {
-font-size: 1em;
+html {
+    font-family: "Help Me";
 }
