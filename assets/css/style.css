@@ -140,6 +140,13 @@ table {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Cinzel";
+  src: url("../fonts/Cinzel-Regular.woff2") format("woff2"), url("../fonts/Cinzel-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   font-size: 18px;
 }
@@ -147,6 +154,10 @@ body {
 h1 {
   font-family: "October Crow";
   font-size: 5em;
+}
+
+li {
+  font-family: "Cinzel";
 }
 
 * {
@@ -192,6 +203,7 @@ body {
   display: flex;
   width: 300px;
   justify-content: space-between;
+  font-family: "Cinzel";
 }
 
 /*# sourceMappingURL=style.css.map */
