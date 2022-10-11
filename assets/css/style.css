@@ -149,6 +149,7 @@ table {
 }
 body {
   font-size: 18px;
+  font-family: "Cinzel";
 }
 
 h1 {
@@ -156,8 +157,14 @@ h1 {
   font-size: 5em;
 }
 
-li {
-  font-family: "Cinzel";
+a {
+  color: #efeee5;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #DD2424;
 }
 
 * {
@@ -201,7 +208,7 @@ body {
 }
 .hero ul {
   display: flex;
-  width: 300px;
+  width: 40vw;
   justify-content: space-between;
   font-family: "Cinzel";
 }

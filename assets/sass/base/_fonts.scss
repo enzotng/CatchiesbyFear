@@ -1,30 +1,35 @@
 @font-face {
-    font-family: 'October Crow';
-    src: url('../fonts/OctoberCrow.woff2') format('woff2'),
-        url('../fonts/OctoberCrow.woff') format('woff');
+    font-family: "October Crow";
+    src: url("../fonts/OctoberCrow.woff2") format("woff2"), url("../fonts/OctoberCrow.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cinzel';
-    src: url('../fonts/Cinzel-Regular.woff2') format('woff2'),
-        url('../fonts/Cinzel-Regular.woff') format('woff');
+    font-family: "Cinzel";
+    src: url("../fonts/Cinzel-Regular.woff2") format("woff2"), url("../fonts/Cinzel-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-body{
+body {
     font-size: 18px;
+    font-family: "Cinzel";
 }
 
-h1{
+h1 {
     font-family: $title;
     font-size: 5em;
 }
 
-li{
-    font-family: 'Cinzel';
+a {
+    color: $white;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $light-red;
 }
