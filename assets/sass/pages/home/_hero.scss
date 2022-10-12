@@ -6,10 +6,16 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    h1{
+        z-index: -1;
+    }
     ul{
         display: flex;
         width: 40vw;
         justify-content: space-between;
         font-family: "Cinzel";  
+        li{
+            z-index: -1;
+        }
     }
 }
