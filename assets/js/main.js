@@ -16,3 +16,13 @@ var curseur = document.querySelector('.pointer');
     curseur.style.left = e.pageX - centreXcurseur + "px"
       curseur.style.top = e.pageY - centreYcurseur + "px"
   })
+let tlPointer = gsap.timeline({paused: true})
+tlPointer.to(".pointer", {"background-color": "#efeee5", "border-radius": "50%", "width": "20px", "height": "20px"})
+tlPointer.play()
+function overLink() {
+  tlPointer.reverse()
+}
+
+function outLink() {
+  tlPointer.play()
+}
