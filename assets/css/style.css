@@ -196,7 +196,7 @@ a {
   position: absolute;
   transform: scale(var(--ggs, 1));
   width: 24px;
-  height: 18px;
+  height: 12px;
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 100px;
   overflow: hidden;
