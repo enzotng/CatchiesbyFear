@@ -246,22 +246,54 @@ a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
 }
-.hero ul {
-  display: flex;
-  width: 40vw;
-  justify-content: space-between;
-  font-family: "Cinzel";
+
+svg {
+  width: 10vw;
+  z-index: -1;
+  bottom: 1vw;
 }
-.hero ul a {
-  color: #efeee5;
-  transition: all 0.3s;
-  text-decoration: none;
-  z-index: 10;
+
+svg:hover {
+  cursor: pointer;
 }
-.hero ul a:hover {
-  color: #DD2424;
+
+/* GHOST ========================= */
+.ghost-1 {
+  fill: #f5f5f5;
+}
+
+.ghost-2 {
+  fill: #263238;
+}
+
+.ghost-3 {
+  fill: #f8bbcf;
+}
+
+.ghost-4 {
+  fill: #00695C;
+}
+
+#_02-ghost {
+  position: fixed;
+  left: 0px;
+}
+
+#ghost {
+  animation: floaty 1.75s infinite;
+}
+
+@keyframes floaty {
+  0% {
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(25px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
