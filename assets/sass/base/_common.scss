@@ -6,12 +6,18 @@
 
 body {
   overflow-x: hidden;
-  background-color: $background;
+  // background-color: $background;
   color: $white;
-  background-image: linear-gradient($white-opacity .1em, transparent .1em), linear-gradient(90deg, $white-opacity .1em, transparent .1em);
-  background-size: 15em 15em;
-}
-
-a{
+  // background-image: linear-gradient($white-opacity .1em, transparent .1em), linear-gradient(90deg, $white-opacity .1em, transparent .1em);
+  // background-size: 15em 15em;
+  
+}#bg_video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}a{
   cursor: none;
 }

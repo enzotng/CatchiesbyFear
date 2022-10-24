@@ -10,28 +10,41 @@
 
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+  <video autoplay muted loop id="bg_video">
+    <source src="assets/video/background.mp4" type="video/mp4">
+  </video>
   <div class="body-particles">
     <div class="pointer"></div>
-      <section class="hero">
-        <h1>Catchies by Fear</h1>
-        <svg id="_02-ghost" data-name="02-ghost" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 428.59 578.3">
-          <g id="ghost">
-            <path class="ghost-1" d="M525.8,359.1c-14.13-49.54-5.28-101-19.23-150.5-17.89-63.48-71.35-100.45-136.9-100.32C275.42,108.45,209.31,210,214.14,297c2.07,37.22-1.26,74.93-7.23,111.67-6.13,37.67-11.24,113.73,35.23,132.32,20,8,54,2,56-14,0,0,16,48,44,48s42-8,50-26c0,0,18,32,42,26s32-38,32-38,12,18,44,8,26-46,26-46,4,10,26,8c40.34-3.67,31.08-52.35,9.79-70.89C548.35,415.57,534.19,388.52,525.8,359.1Z" transform="translate(-202.99 -108.27)"/>
-            <ellipse class="ghost-2" cx="301.19" cy="204.79" rx="27.5" ry="13.46" transform="translate(-214.88 282.63) rotate(-64.94)"/>
-            <ellipse class="ghost-2" cx="366.84" cy="199.5" rx="18.98" ry="28.99" transform="translate(-248.24 23.77) rotate(-19.24)"/>
-            <path class="ghost-2" d="M313.51,247.06s37.69-8.57,45.9,17.53,5.88,52.54-13.29,46.82-19.27-42.63-19.27-42.63,2.67-15.55-13.06-12.95S308.23,247.9,313.51,247.06Z" transform="translate(-202.99 -108.27)"/>
-            <ellipse class="ghost-3" cx="392.7" cy="234.43" rx="14.3" ry="5.57" transform="translate(-234.97 -43.6) rotate(-9.05)"/>
-            <ellipse class="ghost-3" cx="275.24" cy="241.02" rx="4.9" ry="12.59" transform="translate(-221.67 350.59) rotate(-77.75)"/>
-          </g>
-        </svg>
-      </section>
-      </div>
-      <div id="particles-js"></div>
-      <script src="./assets/js/gsap.js"></script>
-      <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-      <script src="./assets/js/particle_script.js"></script>
-      <script src="assets/js/main.js"></script>
+    <section class="hero">
+      <!-- <h1>Catchies by Fear</h1> -->
+      <svg id="_02-ghost" data-name="02-ghost" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 428.59 578.3">
+        <g id="ghost">
+          <path class="ghost-1"
+            d="M525.8,359.1c-14.13-49.54-5.28-101-19.23-150.5-17.89-63.48-71.35-100.45-136.9-100.32C275.42,108.45,209.31,210,214.14,297c2.07,37.22-1.26,74.93-7.23,111.67-6.13,37.67-11.24,113.73,35.23,132.32,20,8,54,2,56-14,0,0,16,48,44,48s42-8,50-26c0,0,18,32,42,26s32-38,32-38,12,18,44,8,26-46,26-46,4,10,26,8c40.34-3.67,31.08-52.35,9.79-70.89C548.35,415.57,534.19,388.52,525.8,359.1Z"
+            transform="translate(-202.99 -108.27)" />
+          <ellipse class="ghost-2" cx="301.19" cy="204.79" rx="27.5" ry="13.46"
+            transform="translate(-214.88 282.63) rotate(-64.94)" />
+          <ellipse class="ghost-2" cx="366.84" cy="199.5" rx="18.98" ry="28.99"
+            transform="translate(-248.24 23.77) rotate(-19.24)" />
+          <path class="ghost-2"
+            d="M313.51,247.06s37.69-8.57,45.9,17.53,5.88,52.54-13.29,46.82-19.27-42.63-19.27-42.63,2.67-15.55-13.06-12.95S308.23,247.9,313.51,247.06Z"
+            transform="translate(-202.99 -108.27)" />
+          <ellipse class="ghost-3" cx="392.7" cy="234.43" rx="14.3" ry="5.57"
+            transform="translate(-234.97 -43.6) rotate(-9.05)" />
+          <ellipse class="ghost-3" cx="275.24" cy="241.02" rx="4.9" ry="12.59"
+            transform="translate(-221.67 350.59) rotate(-77.75)" />
+        </g>
+      </svg>
+    </section>
+  </div>
+  <div id="particles-js"></div>
+  <script src="./assets/js/gsap.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script src="./assets/js/particle_script.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
