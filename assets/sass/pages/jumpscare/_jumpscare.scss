@@ -1,6 +1,66 @@
-.jumpscare{
+.wrap_jumpscare{
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
+.glitch{
+  color:white;
+  font-size:4em;
+  position:absolute;
+  top: 50px;
+  left: 50px;
+  background-color:$background;
+}
+@keyframes noise-anim{
+  @for $i from 0 through 20{
+    #{percentage($i * 0.05)}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:after{
+  content:'Help me';
+  position:absolute;
+  left:2px;
+  top:0;
+  color:white;
+  overflow:hidden;
+  background: $background;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim 1s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2{
+  @for $i from 0 through 20{
+    #{percentage($i * 0.05)}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:before{
+  content:'Help me';
+  position:absolute;
+  left:-2px;
+  top:0;
+  color:white;
+  overflow:hidden;
+  background: $background;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.jumpscare {
+  position: relative;
+  right: 100;
+  top: -250px;
+  background: url("https://s-media-cache-ak0.pinimg.com/736x/62/3b/3f/623b3f38ca1b28d165c5b93dd728138b.jpg") no-repeat;
+  opacity: 0;
+}
+ 
+.jumpscare:hover {
+  opacity: 1;
+}
+
+
 }
