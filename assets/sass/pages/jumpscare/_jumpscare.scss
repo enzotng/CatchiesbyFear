@@ -4,51 +4,6 @@
     justify-content: center;
     align-items: center;
 
-.glitch{
-  color:white;
-  font-size:4em;
-  position:absolute;
-  top: 50px;
-  left: 50px;
-  background-color:$background;
-}
-@keyframes noise-anim{
-  @for $i from 0 through 20{
-    #{percentage($i * 0.05)}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
-    }
-  }
-}
-.glitch:after{
-  content:'Help me';
-  position:absolute;
-  left:2px;
-  top:0;
-  color:white;
-  overflow:hidden;
-  background: $background;
-  clip:rect(0,900px,0,0); 
-  animation:noise-anim 1s infinite linear alternate-reverse;
-}
-
-@keyframes noise-anim-2{
-  @for $i from 0 through 20{
-    #{percentage($i * 0.05)}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
-    }
-  }
-}
-.glitch:before{
-  content:'Help me';
-  position:absolute;
-  left:-2px;
-  top:0;
-  color:white;
-  overflow:hidden;
-  background: $background;
-  clip:rect(0,900px,0,0); 
-  animation:noise-anim-2 3s infinite linear alternate-reverse;
-}
 
 .jumpscare {
   position: relative;
