@@ -5,4 +5,36 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    .eyes{
+        width: 60px;
+        height: 15px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 100px;
+        left: 70px;
+        z-index: 2;
+        opacity: 1;
+        span{
+            width: 15px;
+            border-radius: 50%;
+            aspect-ratio: 1;
+            background-color: $red;
+            animation: eyes 5s infinite;
+        }
+    }
 }
+@keyframes eyes {
+    0% {
+      height: 15px;
+    }
+    1% {
+      height: 0px;
+    }
+    2% {
+      height: 15px;
+    }
+    100% {
+        height: 15px;
+      }
+  }

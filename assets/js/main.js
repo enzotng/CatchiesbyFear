@@ -18,4 +18,9 @@ function outLink() {
   tlPointer.play()
 }
 
-
+function eyesDisepearOver(){
+  document.querySelector('.eyes').style.opacity = "0"
+}
+function eyesDisepearOut(){
+  document.querySelector('.eyes').style.opacity = "1"
+}
