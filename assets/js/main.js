@@ -25,10 +25,6 @@ function eyesDisepearOut(){
   eyes.style.opacity = "1"
 }
 
-const wrapWindow = document.querySelector('.wrap_window')
-const myWindow = document.querySelector('.window')
-const wallGlass = document.querySelector('.wall_glass')
-const wrapAmbiance = document.querySelector('.wrap_ambiance')
 
 let tlWindow = gsap.timeline({paused: true})
 .to(".wrap_window", {"top": "-175px", "left": "-125px", "z-index": "4"})
@@ -39,17 +35,19 @@ let tlWindow = gsap.timeline({paused: true})
 .to(".wrap_ambiance", {"opacity": "1"}, "<1.5")
 .to('.wrap_txt_ambiance p:nth-of-type(1)', {"opacity": "1"}, '<1.5')
 .to('.wrap_txt_ambiance p:nth-of-type(2)', {"opacity": "1"}, '<3.5')
-.to('.wrap_txt_ambiance p:nth-of-type(n+1)', {"opacity": "0"}, '<10')
-.to('.wrap_txt_ambiance p:nth-of-type(3)', {"opacity": "1"}, '<0.5')
-.to('.wrap_txt_ambiance p:nth-of-type(3)', {"opacity": "0"}, '<12')
-.to('.wrap_txt_ambiance p:nth-of-type(4)', {"opacity": "1"}, '<0.5')
-.to('.wrap_txt_ambiance p:nth-of-type(4)', {"opacity": "0"}, '<10')
-.to('.wrap_txt_ambiance p:nth-of-type(5)', {"opacity": "1"}, '<0.5')
-.to('.wrap_txt_ambiance p:nth-of-type(6)', {"opacity": "0"}, '<12')
+.to('.overlay_ambiance', {"display": "block"}, '<12')
+.to('.overlay_ambiance', {"background": "rgb(0 0 0 0.95)"}, '<0.1')
+.to('.light_switch', {"opacity": "1"}, '<0.5')
   // setTimeout(() => {
   //   wallGlass.style.background = "rgba(200, 255, 230, 0.1)"
   // }, 1000);  
-wrapWindow.addEventListener('click', () => {
+document.querySelector('.wrap_window').addEventListener('click', () => {
   tlWindow.play()
-
+});
+let tlSwitch= gsap.timeline({paused: true})
+.to(".light_switch", {"background": "#1E1E1E"})
+.to(".light_switch span", {"left": "47px", "background": "#efeee5"})
+const lightSwitch = document.querySelector('.light_switch')
+lightSwitch.addEventListener('click', () => {
+  tlSwitch.play()  
 });
