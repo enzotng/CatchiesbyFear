@@ -10,7 +10,7 @@
     box-sizing: border-box;
     pointer-events: none;
     color: $white;
-    z-index: 2;
+    z-index: 99;
     &::after,
     &::before {
         content: "";

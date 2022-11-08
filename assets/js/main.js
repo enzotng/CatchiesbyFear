@@ -17,10 +17,29 @@ function overLink() {
 function outLink() {
   tlPointer.play()
 }
-
+const eyes = document.querySelector('.eyes')
 function eyesDisepearOver(){
-  document.querySelector('.eyes').style.opacity = "0"
+  eyes.style.opacity = "0"
 }
 function eyesDisepearOut(){
-  document.querySelector('.eyes').style.opacity = "1"
+  eyes.style.opacity = "1"
 }
+
+const wrapWindow = document.querySelector('.wrap_window')
+const myWindow = document.querySelector('.window')
+const wallGlass = document.querySelector('.wall_glass')
+const wrapAmbiance = document.querySelector('.wrap_ambiance')
+wrapWindow.addEventListener('click', () => {
+  wrapWindow.style.top = '-175px';
+  wrapWindow.style.left = '-125px';
+  myWindow.style.width = 'calc(100vw + 175px)';
+  myWindow.style.height = 'calc(100vh + 175px)';
+  wallGlass.style.width = 'calc(100vw + 175px)';
+  wallGlass.style.height = 'calc(100vh + 175px)';
+  eyes.style.display = 'none';
+  setTimeout(() => {
+    wrapAmbiance.style.display = "block"
+  }, 1000);
+  wrapWindow.style.zIndex = "4"
+  wrapAmbiance.style.zIndex = "11"
+});

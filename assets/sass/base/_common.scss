@@ -6,7 +6,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: $background;
   color: $white;
   background-image: linear-gradient($white-opacity .1em, transparent .1em), linear-gradient(90deg, $white-opacity .1em, transparent .1em);
