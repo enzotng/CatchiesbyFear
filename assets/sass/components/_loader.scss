@@ -1,7 +1,7 @@
 .wrap_loader{
     width: 100%;
     height: 100vh;
-    background-color: $background;
+    background-color: #0E0E0E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,7 @@
         height: calc(calc(8px + 4px) * 5);
         width: calc(calc(8px + 4px) * 5);
         opacity: 0;
+        position: absolute;
         animation: appear 1s 0.5s ease-in-out forwards;
         .loader{
             transform: scaleY(.4);
@@ -33,35 +34,36 @@
             animation-iteration-count: infinite;
             &.loader1{
                 animation-name: quiet;
-                margin-left: 0px;
+                // margin-left: 0px;
               }
               
               &.loader2{
                 animation-name: loud;
-                margin-left: calc(4px + calc(8px * 1));
+                // margin-left: calc(4px + calc(8px * 1));
               }
               
               &.loader3{
                 animation-name: normal;
-                margin-left: calc(8px + calc(8px * 2));
+                // margin-left: calc(8px + calc(8px * 2));
               }
               
               &.loader4{
                 animation-name: loud;
-                margin-left: calc(12px + calc(8px * 3))
+                // margin-left: calc(12px + calc(8px * 3))
               }
               
               &.loader5{
                 animation-name: quiet;
-                margin-left: calc(16px + calc(8px * 4));
+                // margin-left: calc(16px + calc(8px * 4));
               }
           }
       }
       .glitch{
         color:white;
         font-size:2em;
-        background-color:$background;
+        background-color: #0E0E0E;
         opacity: 0;
+        position: absolute;
         animation: appear 1s 2.5s ease-in-out forwards;
         &:after{
             content:'You are in danger'; 
@@ -71,7 +73,7 @@
             top:0;
             color:white;
             overflow:hidden;
-            background: $background;
+            background: #0E0E0E;
             clip:rect(0,900px,0,0); 
             animation:noise-anim 1s infinite linear alternate-reverse;
           }
@@ -84,7 +86,7 @@
             width: 120%;
             color:white;
             overflow:hidden;
-            background: $background;
+            background: #0E0E0E;
             clip:rect(0,900px,0,0); 
             animation:noise-anim-2 3s infinite linear alternate-reverse;
           }

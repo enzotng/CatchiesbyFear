@@ -29,17 +29,27 @@ const wrapWindow = document.querySelector('.wrap_window')
 const myWindow = document.querySelector('.window')
 const wallGlass = document.querySelector('.wall_glass')
 const wrapAmbiance = document.querySelector('.wrap_ambiance')
+
+let tlWindow = gsap.timeline({paused: true})
+.to(".wrap_window", {"top": "-175px", "left": "-125px", "z-index": "4"})
+.to(".window", {"width": "calc(100vw + 175px)", "height": "calc(100vh + 175px)"}, "<")
+.to(".wall_glass", {"width": "calc(100vw + 175px)", "height": "calc(100vh + 175px)"}, "<")
+.to(".eyes", {"display": "none"}, "<")
+.to(".wrap_ambiance", {"display": "block"})
+.to(".wrap_ambiance", {"opacity": "1"}, "<1.5")
+.to('.wrap_txt_ambiance p:nth-of-type(1)', {"opacity": "1"}, '<1.5')
+.to('.wrap_txt_ambiance p:nth-of-type(2)', {"opacity": "1"}, '<3.5')
+.to('.wrap_txt_ambiance p:nth-of-type(n+1)', {"opacity": "0"}, '<10')
+.to('.wrap_txt_ambiance p:nth-of-type(3)', {"opacity": "1"}, '<0.5')
+.to('.wrap_txt_ambiance p:nth-of-type(3)', {"opacity": "0"}, '<12')
+.to('.wrap_txt_ambiance p:nth-of-type(4)', {"opacity": "1"}, '<0.5')
+.to('.wrap_txt_ambiance p:nth-of-type(4)', {"opacity": "0"}, '<10')
+.to('.wrap_txt_ambiance p:nth-of-type(5)', {"opacity": "1"}, '<0.5')
+.to('.wrap_txt_ambiance p:nth-of-type(6)', {"opacity": "0"}, '<12')
+  // setTimeout(() => {
+  //   wallGlass.style.background = "rgba(200, 255, 230, 0.1)"
+  // }, 1000);  
 wrapWindow.addEventListener('click', () => {
-  wrapWindow.style.top = '-175px';
-  wrapWindow.style.left = '-125px';
-  myWindow.style.width = 'calc(100vw + 175px)';
-  myWindow.style.height = 'calc(100vh + 175px)';
-  wallGlass.style.width = 'calc(100vw + 175px)';
-  wallGlass.style.height = 'calc(100vh + 175px)';
-  eyes.style.display = 'none';
-  setTimeout(() => {
-    wrapAmbiance.style.display = "block"
-  }, 1000);
-  wrapWindow.style.zIndex = "4"
-  wrapAmbiance.style.zIndex = "11"
+  tlWindow.play()
+
 });

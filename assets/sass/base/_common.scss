@@ -12,3 +12,7 @@ body {
   background-image: linear-gradient($white-opacity .1em, transparent .1em), linear-gradient(90deg, $white-opacity .1em, transparent .1em);
   background-size: clamp(7em, 25vw, 16em) clamp(7em, 25vw, 16em);
 }
+
+.italique{
+  font-style: italic;
+}
