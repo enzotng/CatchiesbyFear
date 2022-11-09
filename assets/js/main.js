@@ -1,6 +1,6 @@
 
-
- let dollPosition = -230;
+let compteur = 1
+ let dollPosition = -222;
 var curseur = document.querySelector('.pointer');
  var centreYcurseur = parseInt(getComputedStyle(curseur, null).height) / 2;
  var centreXcurseur = parseInt(getComputedStyle(curseur, null).width) / 2;
@@ -38,7 +38,7 @@ let tlWindow = gsap.timeline({paused: true, onComplete: appearSwitch})
 .to('.wrap_txt_ambiance p:nth-of-type(2)', {"opacity": "1"}, '<3.5')
 .to('.wrap_txt_ambiance p', {"opacity": "0"}, '<12')
 
-let tlWindow2 = gsap.timeline({paused: true, onComplete: appear2})
+let tlWindow2 = gsap.timeline({paused: true})
 .to('.overlay_ambiance', {"display": "block"})
 .to('.overlay_ambiance', {"background": "rgb(0 0 0 0.95)"}, '<0.1')
 .to('.light_switch', {"opacity": "1"}, '<0.5')
@@ -52,8 +52,10 @@ let tlSwitch= gsap.timeline({paused: true, onComplete: switchRestart})
 const lightSwitch = document.querySelector('.light_switch')
 lightSwitch.addEventListener('click', () => {
   tlSwitch.play()  
-  dollPosition += 57.5
-  document.querySelector(".creepy_doll_ambiance").style.top = dollPosition+"px"
+  if (dollPosition !== -22){
+    dollPosition += 100
+    document.querySelector(".creepy_doll_ambiance").style.top = dollPosition+"px"
+  }
 });
 
 function appearSwitch() {
@@ -64,17 +66,55 @@ function switchRestart() {
   lightSwitch.style.opacity = "0"
   tlSwitch.reverse()
   lightSwitch.style.display = "none"
-  tlWindow2.reverse()
+  if (compteur === 1){
+    tlWindow3.play()
+  }
+  if(compteur === 2){
+    tlWindow4.play()
+  }
+  if(compteur === 3){
+    tlWindow5.play()
+  }
+  compteur += 1
 }
+
+let tlWindow4= gsap.timeline({paused: true})
+.to('.overlay_ambiance', {"background": "black"})
+.to('.overlay_ambiance', {"background": "white"}, "<0.1")
+.to('.overlay_ambiance', {"display": "none"}, "<0.2")
+.to('.wrap_txt_ambiance p:nth-of-type(4)', {"opacity": "1"})
+.to('.wrap_txt_ambiance p', {"opacity": "0"}, '<12')
+.to('.overlay_ambiance', {"display": "block"})
+.to('.light_switch', {"display": "block"}, "<")
+.to('.overlay_ambiance', {"background": "rgb(0 0 0 0.95)"}, '<0.1')
+.to('.light_switch', {"opacity": "1"}, '<0.5')
 
 
 let tlWindow3 = gsap.timeline({paused: true})
+.to('.overlay_ambiance', {"background": "black"})
+.to('.overlay_ambiance', {"background": "white"}, "<0.1")
+.to('.overlay_ambiance', {"display": "none"}, "<0.2")
 .to('.wrap_txt_ambiance p:nth-of-type(3)', {"opacity": "1"})
 .to('.wrap_txt_ambiance p', {"opacity": "0"}, '<12')
 .to('.overlay_ambiance', {"display": "block"})
 .to('.light_switch', {"display": "block"}, "<")
 .to('.overlay_ambiance', {"background": "rgb(0 0 0 0.95)"}, '<0.1')
 .to('.light_switch', {"opacity": "1"}, '<0.5')
-function appear2() {
-  tlWindow3.play()
-}
+
+
+let tlWindow5 = gsap.timeline({paused: true})
+.to('.creepy_doll_ambiance', {"top": "-50vh", duration: 0})
+.to('.overlay_ambiance', {"background": "black"})
+.to('.overlay_ambiance', {"background": "white"}, "<0.1")
+.to('.overlay_ambiance', {"display": "none"}, "<0.2")
+.to('.wrap_txt_ambiance p:nth-of-type(5)', {"opacity": "1"})
+.to('.wrap_txt_ambiance p', {"opacity": "0"}, '<12')
+.to('.overlay_ambiance', {"display": "block"})
+.to('.overlay_ambiance', {"background": "rgb(0 0 0 0.95)"}, '<0.1')
+.to('.overlay_ambiance', {"display": "none"}, '<0.1')
+.to('.overlay_ambiance', {"background": "white"}, '<')
+.to('.overlay_ambiance', {"display": "block"}, "<0.1")
+.to('.overlay_ambiance', {"background": "black"}, '<0.1')
+.to('.overlay_ambiance', {"display": "none"}, '<0.1')
+.to('.creepy_doll_ambiance', {"top": "120vh"})
+.to('.doll_overlay', {"bottom": "0"}, "<0.5")
