@@ -27,16 +27,23 @@ function eyesDisepearOut(){
 }
 
 
-let tlWindow = gsap.timeline({paused: true, onComplete: appearSwitch})
+let tlWindow = gsap.timeline({paused: true, onComplete: windowBis})
 .to(".wrap_window", {"top": "-175px", "left": "-125px", "z-index": "4"})
 .to(".window", {"width": "calc(100vw + 175px)", "height": "calc(100vh + 175px)"}, "<")
 .to(".wall_glass", {"width": "calc(100vw + 175px)", "height": "calc(100vh + 175px)"}, "<")
 .to(".eyes", {"display": "none"}, "<")
 .to(".wrap_ambiance", {"display": "block"})
 .to(".wrap_ambiance", {"opacity": "1"}, "<1.5")
+
+
+let tlWindowBis = gsap.timeline({paused: true, onComplete: appearSwitch})
 .to('.wrap_txt_ambiance p:nth-of-type(1)', {"opacity": "1"}, '<1.5')
 .to('.wrap_txt_ambiance p:nth-of-type(2)', {"opacity": "1"}, '<3.5')
 .to('.wrap_txt_ambiance p', {"opacity": "0"}, '<12')
+
+function windowBis() {
+  tlWindowBis.play()
+}
 
 let tlWindow2 = gsap.timeline({paused: true})
 .to('.overlay_ambiance', {"display": "block"})
@@ -102,7 +109,7 @@ let tlWindow3 = gsap.timeline({paused: true})
 .to('.light_switch', {"opacity": "1"}, '<0.5')
 
 
-let tlWindow5 = gsap.timeline({paused: true})
+let tlWindow5 = gsap.timeline({paused: true, onComplete: closeWindow})
 .to('.creepy_doll_ambiance', {"top": "-50vh", duration: 0})
 .to('.overlay_ambiance', {"background": "black"})
 .to('.overlay_ambiance', {"background": "white"}, "<0.1")
@@ -114,7 +121,16 @@ let tlWindow5 = gsap.timeline({paused: true})
 .to('.overlay_ambiance', {"display": "none"}, '<0.1')
 .to('.overlay_ambiance', {"background": "white"}, '<')
 .to('.overlay_ambiance', {"display": "block"}, "<0.1")
+.to('.wrap_ambiance', {"background": "black"}, '<')
 .to('.overlay_ambiance', {"background": "black"}, '<0.1')
-.to('.overlay_ambiance', {"display": "none"}, '<0.1')
 .to('.creepy_doll_ambiance', {"top": "120vh"})
-.to('.doll_overlay', {"bottom": "0"}, "<0.5")
+.to('.doll_jumpscare', {"height": "500vh", "opacity": "0"}, "<0.5")
+.to('.overlay_ambiance', {"clip-path": "inset(100% 0 0 0)"}, "<0.5")
+.to('.wrap_ambiance', {"opacity": "0"}, "<")
+.to('.overlay_ambiance', {"display": "none"}, "<0.5")
+.to('.wrap_ambiance', {"display": "none"}, "<")
+
+
+function closeWindow() {
+  tlWindow.reverse()
+}
