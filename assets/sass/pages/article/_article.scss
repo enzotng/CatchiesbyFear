@@ -1,0 +1,219 @@
+main {
+    --angle: calc(0.0436609313 * 100vw);
+    margin-block-end: 15vh;
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        nav {
+            background: $dark-red;
+            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+            position: fixed;
+            z-index: 98;
+            margin-block: 30px;
+            border-radius: 50px;
+            bottom: 0;
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+                border-radius: 50px;
+                li {
+                    padding-inline-end: 10px;
+                    i {
+                        padding-inline-end: 10px;
+                    }
+                    a {
+                        color: $white;
+                        transition: all 0.3s;
+                        &:hover {
+                            color: $background;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    figure {
+        margin: 0;
+    }
+    .parallelogramme {
+        background-color: $dark-red;
+        clip-path: polygon(0% var(--angle), 100% 0%, 100% calc(100% - var(--angle)), 0% 100%);
+        .conteneur {
+            margin: 0 auto;
+            padding-block: 15vh;
+            width: 75vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h1{
+                font-family: $texte;
+                text-align: right;
+                text-transform: uppercase;
+                font-size: 3.5rem;
+            }
+            hr {
+                margin-block: 2rem;
+                border: 0;
+                height: 1px;
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+            }
+        }
+    }
+
+    .parallelogramme2 {
+        display: flex;
+        justify-content: center;
+        clip-path: polygon(0% var(--angle), 100% 0%, 100% calc(100% - var(--angle)), 0% 100%);
+        filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+        position: relative;
+        .box_video{
+            background: linear-gradient(to right, #1e1e1e 0%, $background 100%);
+            iframe {
+                width: 75vw;
+                padding: 100px;
+                height: 100vh;
+            }
+            video {
+                width: 75vw;
+                padding: 100px;
+                height: 100vh;
+            }
+        }
+    }
+    .btn_Jouer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        padding: 20px;
+        background: none;
+        border: 0;
+        color: $white;
+        font-size: 4rem;
+        transition: all 0.3s;
+        &:hover {
+            color: $dark-red;
+        }
+    }
+
+    #repere {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.75;
+    }
+
+    #repere svg {
+        overflow-x: hidden;
+        width: 32rem;
+    }
+
+    p {
+        font-family: $subtitle;
+        text-align: justify;
+    }
+
+    .battement {
+        flex: 1;
+        font-size: 4rem;
+        color: $white;
+        text-align: left;
+        letter-spacing: 0.1em;
+        animation: pulse 2.5s ease-in-out infinite;
+        filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+    }
+
+    .fog {
+        opacity: 0;
+        position: fixed;
+        width: 20%;
+    }
+
+    .fog1 {
+        width: 50%;
+        animation: fog-animation-1 40s linear infinite;
+        animation-delay: 2s;
+    }
+
+    .fog2 {
+        width: 80%;
+        animation: fog-animation-2 30s linear infinite;
+        animation-delay: 4s;
+    }
+
+    .fog3 {
+        width: 100%;
+        animation: fog-animation-3 50s linear infinite;
+        animation-delay: 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.3;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    79% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fog-animation-1 {
+    0% {
+        top: -50%;
+        left: -80%;
+        opacity: 0.1;
+    }
+
+    100% {
+        top: 50%;
+        left: 100%;
+    }
+}
+
+@keyframes fog-animation-2 {
+    0% {
+        top: 50%;
+        left: -50%;
+        opacity: 0.1;
+    }
+
+    100% {
+        top: -50%;
+        left: 100%;
+    }
+}
+
+@keyframes fog-animation-3 {
+    0% {
+        top: 0;
+        left: -60%;
+        opacity: 0.2;
+    }
+
+    100% {
+        top: 50%;
+        left: 120%;
+    }
+}

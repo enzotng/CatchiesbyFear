@@ -6,7 +6,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: $background;
   color: $white;
   background-image: linear-gradient($white-opacity .1em, transparent .1em), linear-gradient(90deg, $white-opacity .1em, transparent .1em);
@@ -15,4 +15,9 @@ body {
 
 .italique{
   font-style: italic;
+}
+
+a{
+  text-decoration: none;
+  color: $background;
 }

@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -187,7 +188,7 @@ h1 {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #0e0E0E;
   color: #efeee5;
   background-image: linear-gradient(rgba(239, 238, 229, 0.2941176471) 0.1em, transparent 0.1em), linear-gradient(90deg, rgba(239, 238, 229, 0.2941176471) 0.1em, transparent 0.1em);
@@ -196,6 +197,11 @@ body {
 
 .italique {
   font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: #0e0E0E;
 }
 
 .pointer {
@@ -372,132 +378,132 @@ body {
 }
 @keyframes noise-anim {
   0% {
-    clip: rect(79px, 9999px, 86px, 0);
+    clip: rect(73px, 9999px, 73px, 0);
   }
   5% {
-    clip: rect(17px, 9999px, 83px, 0);
+    clip: rect(64px, 9999px, 33px, 0);
   }
   10% {
-    clip: rect(65px, 9999px, 5px, 0);
+    clip: rect(72px, 9999px, 8px, 0);
   }
   15% {
-    clip: rect(81px, 9999px, 77px, 0);
+    clip: rect(97px, 9999px, 39px, 0);
   }
   20% {
-    clip: rect(74px, 9999px, 63px, 0);
+    clip: rect(11px, 9999px, 97px, 0);
   }
   25% {
-    clip: rect(9px, 9999px, 89px, 0);
+    clip: rect(62px, 9999px, 32px, 0);
   }
   30% {
-    clip: rect(64px, 9999px, 35px, 0);
+    clip: rect(37px, 9999px, 7px, 0);
   }
   35% {
-    clip: rect(67px, 9999px, 51px, 0);
+    clip: rect(58px, 9999px, 38px, 0);
   }
   40% {
-    clip: rect(57px, 9999px, 8px, 0);
+    clip: rect(9px, 9999px, 67px, 0);
   }
   45% {
-    clip: rect(95px, 9999px, 30px, 0);
+    clip: rect(13px, 9999px, 64px, 0);
   }
   50% {
-    clip: rect(77px, 9999px, 45px, 0);
+    clip: rect(57px, 9999px, 74px, 0);
   }
   55% {
-    clip: rect(34px, 9999px, 77px, 0);
+    clip: rect(8px, 9999px, 2px, 0);
   }
   60% {
-    clip: rect(75px, 9999px, 78px, 0);
+    clip: rect(2px, 9999px, 12px, 0);
   }
   65% {
-    clip: rect(51px, 9999px, 61px, 0);
+    clip: rect(64px, 9999px, 51px, 0);
   }
   70% {
-    clip: rect(10px, 9999px, 30px, 0);
+    clip: rect(32px, 9999px, 7px, 0);
   }
   75% {
-    clip: rect(47px, 9999px, 57px, 0);
+    clip: rect(76px, 9999px, 15px, 0);
   }
   80% {
-    clip: rect(13px, 9999px, 73px, 0);
+    clip: rect(91px, 9999px, 96px, 0);
   }
   85% {
-    clip: rect(84px, 9999px, 85px, 0);
+    clip: rect(81px, 9999px, 22px, 0);
   }
   90% {
-    clip: rect(7px, 9999px, 39px, 0);
+    clip: rect(4px, 9999px, 83px, 0);
   }
   95% {
-    clip: rect(82px, 9999px, 37px, 0);
+    clip: rect(37px, 9999px, 36px, 0);
   }
   100% {
-    clip: rect(29px, 9999px, 54px, 0);
+    clip: rect(78px, 9999px, 31px, 0);
   }
 }
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(87px, 9999px, 25px, 0);
+    clip: rect(62px, 9999px, 84px, 0);
   }
   5% {
-    clip: rect(33px, 9999px, 32px, 0);
+    clip: rect(83px, 9999px, 82px, 0);
   }
   10% {
-    clip: rect(50px, 9999px, 81px, 0);
+    clip: rect(1px, 9999px, 45px, 0);
   }
   15% {
-    clip: rect(99px, 9999px, 65px, 0);
+    clip: rect(100px, 9999px, 36px, 0);
   }
   20% {
-    clip: rect(38px, 9999px, 22px, 0);
+    clip: rect(68px, 9999px, 79px, 0);
   }
   25% {
-    clip: rect(31px, 9999px, 7px, 0);
+    clip: rect(2px, 9999px, 10px, 0);
   }
   30% {
-    clip: rect(99px, 9999px, 34px, 0);
+    clip: rect(61px, 9999px, 100px, 0);
   }
   35% {
-    clip: rect(26px, 9999px, 6px, 0);
+    clip: rect(62px, 9999px, 92px, 0);
   }
   40% {
-    clip: rect(18px, 9999px, 59px, 0);
+    clip: rect(78px, 9999px, 49px, 0);
   }
   45% {
-    clip: rect(29px, 9999px, 45px, 0);
+    clip: rect(57px, 9999px, 76px, 0);
   }
   50% {
-    clip: rect(94px, 9999px, 10px, 0);
+    clip: rect(68px, 9999px, 43px, 0);
   }
   55% {
-    clip: rect(55px, 9999px, 60px, 0);
+    clip: rect(23px, 9999px, 52px, 0);
   }
   60% {
-    clip: rect(8px, 9999px, 26px, 0);
+    clip: rect(68px, 9999px, 6px, 0);
   }
   65% {
-    clip: rect(67px, 9999px, 6px, 0);
+    clip: rect(58px, 9999px, 83px, 0);
   }
   70% {
-    clip: rect(4px, 9999px, 57px, 0);
+    clip: rect(96px, 9999px, 69px, 0);
   }
   75% {
-    clip: rect(69px, 9999px, 81px, 0);
+    clip: rect(13px, 9999px, 6px, 0);
   }
   80% {
-    clip: rect(98px, 9999px, 37px, 0);
+    clip: rect(66px, 9999px, 12px, 0);
   }
   85% {
-    clip: rect(70px, 9999px, 40px, 0);
+    clip: rect(12px, 9999px, 71px, 0);
   }
   90% {
-    clip: rect(86px, 9999px, 16px, 0);
+    clip: rect(82px, 9999px, 8px, 0);
   }
   95% {
-    clip: rect(52px, 9999px, 50px, 0);
+    clip: rect(75px, 9999px, 56px, 0);
   }
   100% {
-    clip: rect(20px, 9999px, 57px, 0);
+    clip: rect(15px, 9999px, 26px, 0);
   }
 }
 .hero {
@@ -808,6 +814,253 @@ body {
   text-align: center;
 }
 
+main {
+  --angle: calc(0.0436609313 * 100vw);
+  margin-block-end: 15vh;
+}
+main .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .navigation nav {
+  background: #3E0E0E;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  position: fixed;
+  z-index: 98;
+  margin-block: 30px;
+  border-radius: 50px;
+  bottom: 0;
+}
+main .navigation nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 50px;
+}
+main .navigation nav ul li {
+  padding-inline-end: 10px;
+}
+main .navigation nav ul li i {
+  padding-inline-end: 10px;
+}
+main .navigation nav ul li a {
+  color: #efeee5;
+  transition: all 0.3s;
+}
+main .navigation nav ul li a:hover {
+  color: #0e0E0E;
+  font-weight: bold;
+}
+main figure {
+  margin: 0;
+}
+main .parallelogramme {
+  background-color: #3E0E0E;
+  clip-path: polygon(0% var(--angle), 100% 0%, 100% calc(100% - var(--angle)), 0% 100%);
+}
+main .parallelogramme .conteneur {
+  margin: 0 auto;
+  padding-block: 15vh;
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .parallelogramme .conteneur h1 {
+  font-family: "Cinzel";
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+main .parallelogramme .conteneur hr {
+  margin-block: 2rem;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+main .parallelogramme2 {
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(0% var(--angle), 100% 0%, 100% calc(100% - var(--angle)), 0% 100%);
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  position: relative;
+}
+main .parallelogramme2 .box_video {
+  background: linear-gradient(to right, #1e1e1e 0%, #0e0E0E 100%);
+}
+main .parallelogramme2 .box_video iframe {
+  width: 75vw;
+  padding: 100px;
+  height: 100vh;
+}
+main .parallelogramme2 .box_video video {
+  width: 75vw;
+  padding: 100px;
+  height: 100vh;
+}
+main .btn_Jouer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  padding: 20px;
+  background: none;
+  border: 0;
+  color: #efeee5;
+  font-size: 4rem;
+  transition: all 0.3s;
+}
+main .btn_Jouer:hover {
+  color: #3E0E0E;
+}
+main #repere {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.75;
+}
+main #repere svg {
+  overflow-x: hidden;
+  width: 32rem;
+}
+main p {
+  font-family: "Monospace regular";
+  text-align: justify;
+}
+main .battement {
+  flex: 1;
+  font-size: 4rem;
+  color: #efeee5;
+  text-align: left;
+  letter-spacing: 0.1em;
+  animation: pulse 2.5s ease-in-out infinite;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+}
+main .fog {
+  opacity: 0;
+  position: fixed;
+  width: 20%;
+}
+main .fog1 {
+  width: 50%;
+  animation: fog-animation-1 40s linear infinite;
+  animation-delay: 2s;
+}
+main .fog2 {
+  width: 80%;
+  animation: fog-animation-2 30s linear infinite;
+  animation-delay: 4s;
+}
+main .fog3 {
+  width: 100%;
+  animation: fog-animation-3 50s linear infinite;
+  animation-delay: 0;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 1;
+  }
+  79% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fog-animation-1 {
+  0% {
+    top: -50%;
+    left: -80%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 50%;
+    left: 100%;
+  }
+}
+@keyframes fog-animation-2 {
+  0% {
+    top: 50%;
+    left: -50%;
+    opacity: 0.1;
+  }
+  100% {
+    top: -50%;
+    left: 100%;
+  }
+}
+@keyframes fog-animation-3 {
+  0% {
+    top: 0;
+    left: -60%;
+    opacity: 0.2;
+  }
+  100% {
+    top: 50%;
+    left: 120%;
+  }
+}
+.landing {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 5rem;
+  flex-direction: column;
+}
+.landing img {
+  padding-block-start: 5vh;
+  width: 5%;
+}
+.landing nav {
+  z-index: 98;
+  background: #3E0E0E;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  margin-block: 50px;
+  border-radius: 50px;
+}
+.landing nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 50px;
+}
+.landing nav ul .actif {
+  transition: all 0.3s;
+}
+.landing nav ul .actif:hover {
+  font-weight: bold;
+}
+.landing nav ul li {
+  padding-inline-end: 10px;
+}
+.landing nav ul li i {
+  padding-inline: 10px;
+}
+.landing nav ul li a {
+  color: #efeee5;
+  transition: all 0.3s;
+}
+.landing nav ul li a:hover {
+  color: #0e0E0E;
+  font-weight: bold;
+}
+
 .wrap_jumpscare {
   min-height: 100vh;
   display: flex;
@@ -981,1354 +1234,1354 @@ body {
   height: 100%;
 }
 .wrap_window .rain_line:nth-child(1) {
-  left: 67%;
+  left: 42%;
 }
 .wrap_window .rain_line:nth-child(1) .drop {
   width: 100%;
-  height: 73px;
+  height: 53px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1031ms -695ms linear infinite;
+  animation: drop 1185ms -870ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(2) {
-  left: 44%;
+  left: 18%;
 }
 .wrap_window .rain_line:nth-child(2) .drop {
   width: 100%;
-  height: 47px;
+  height: 46px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1004ms -145ms linear infinite;
+  animation: drop 1041ms -1082ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(3) {
-  left: 66%;
+  left: 17%;
 }
 .wrap_window .rain_line:nth-child(3) .drop {
   width: 100%;
-  height: 54px;
+  height: 42px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1038ms -778ms linear infinite;
+  animation: drop 1120ms -482ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(4) {
-  left: 30%;
+  left: 53%;
 }
 .wrap_window .rain_line:nth-child(4) .drop {
   width: 100%;
-  height: 31px;
+  height: 66px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1021ms -241ms linear infinite;
+  animation: drop 1114ms -1651ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(5) {
-  left: 10%;
+  left: 19%;
 }
 .wrap_window .rain_line:nth-child(5) .drop {
   width: 100%;
-  height: 47px;
+  height: 42px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1049ms -166ms linear infinite;
+  animation: drop 1183ms -1103ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(6) {
-  left: 3%;
+  left: 33%;
 }
 .wrap_window .rain_line:nth-child(6) .drop {
   width: 100%;
-  height: 60px;
+  height: 72px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1067ms -652ms linear infinite;
+  animation: drop 1061ms -1668ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(7) {
-  left: 6%;
+  left: 33%;
 }
 .wrap_window .rain_line:nth-child(7) .drop {
   width: 100%;
-  height: 53px;
+  height: 73px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1147ms -1779ms linear infinite;
+  animation: drop 1161ms -1739ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(8) {
-  left: 79%;
+  left: 42%;
 }
 .wrap_window .rain_line:nth-child(8) .drop {
   width: 100%;
-  height: 37px;
+  height: 72px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1057ms -499ms linear infinite;
+  animation: drop 1107ms -275ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(9) {
-  left: 91%;
+  left: 75%;
 }
 .wrap_window .rain_line:nth-child(9) .drop {
   width: 100%;
-  height: 59px;
+  height: 71px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1166ms -761ms linear infinite;
+  animation: drop 1042ms -1049ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(10) {
-  left: 22%;
+  left: 29%;
 }
 .wrap_window .rain_line:nth-child(10) .drop {
   width: 100%;
-  height: 54px;
+  height: 64px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1143ms -791ms linear infinite;
+  animation: drop 1151ms -988ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(11) {
-  left: 5%;
+  left: 19%;
 }
 .wrap_window .rain_line:nth-child(11) .drop {
   width: 100%;
-  height: 63px;
+  height: 60px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1139ms -883ms linear infinite;
+  animation: drop 1009ms -1538ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(12) {
-  left: 28%;
+  left: 45%;
 }
 .wrap_window .rain_line:nth-child(12) .drop {
   width: 100%;
-  height: 51px;
+  height: 34px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1127ms -560ms linear infinite;
+  animation: drop 1067ms -1770ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(13) {
-  left: 7%;
+  left: 84%;
 }
 .wrap_window .rain_line:nth-child(13) .drop {
   width: 100%;
-  height: 79px;
+  height: 59px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1020ms -1847ms linear infinite;
+  animation: drop 1166ms -1668ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(14) {
-  left: 27%;
+  left: 65%;
 }
 .wrap_window .rain_line:nth-child(14) .drop {
   width: 100%;
-  height: 75px;
+  height: 67px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1162ms -383ms linear infinite;
+  animation: drop 1184ms -79ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(15) {
-  left: 93%;
+  left: 55%;
 }
 .wrap_window .rain_line:nth-child(15) .drop {
   width: 100%;
-  height: 47px;
+  height: 56px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1103ms -950ms linear infinite;
+  animation: drop 1110ms -1771ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(16) {
-  left: 11%;
+  left: 84%;
 }
 .wrap_window .rain_line:nth-child(16) .drop {
   width: 100%;
-  height: 33px;
+  height: 75px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1188ms -1803ms linear infinite;
+  animation: drop 1198ms -1589ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(17) {
-  left: 67%;
+  left: 19%;
 }
 .wrap_window .rain_line:nth-child(17) .drop {
   width: 100%;
-  height: 75px;
+  height: 47px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1155ms -1751ms linear infinite;
+  animation: drop 1071ms -686ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(18) {
-  left: 11%;
+  left: 86%;
 }
 .wrap_window .rain_line:nth-child(18) .drop {
   width: 100%;
-  height: 78px;
+  height: 48px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1013ms -492ms linear infinite;
+  animation: drop 1137ms -445ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(19) {
-  left: 1%;
+  left: 66%;
 }
 .wrap_window .rain_line:nth-child(19) .drop {
   width: 100%;
-  height: 55px;
+  height: 61px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1137ms -1942ms linear infinite;
+  animation: drop 1010ms -1098ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(20) {
-  left: 46%;
+  left: 66%;
 }
 .wrap_window .rain_line:nth-child(20) .drop {
   width: 100%;
-  height: 53px;
+  height: 60px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1199ms -941ms linear infinite;
+  animation: drop 1195ms -99ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(21) {
-  left: 56%;
+  left: 25%;
 }
 .wrap_window .rain_line:nth-child(21) .drop {
   width: 100%;
-  height: 42px;
+  height: 47px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1078ms -64ms linear infinite;
+  animation: drop 1171ms -68ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(22) {
-  left: 91%;
+  left: 99%;
 }
 .wrap_window .rain_line:nth-child(22) .drop {
   width: 100%;
-  height: 41px;
+  height: 72px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1079ms -974ms linear infinite;
+  animation: drop 1025ms -203ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(23) {
-  left: 24%;
+  left: 73%;
 }
 .wrap_window .rain_line:nth-child(23) .drop {
   width: 100%;
-  height: 49px;
+  height: 59px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1022ms -1563ms linear infinite;
+  animation: drop 1078ms -1188ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(24) {
-  left: 97%;
+  left: 36%;
 }
 .wrap_window .rain_line:nth-child(24) .drop {
   width: 100%;
-  height: 37px;
+  height: 78px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1116ms -1251ms linear infinite;
+  animation: drop 1038ms -1972ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(25) {
-  left: 72%;
+  left: 74%;
 }
 .wrap_window .rain_line:nth-child(25) .drop {
   width: 100%;
-  height: 78px;
+  height: 41px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1124ms -456ms linear infinite;
+  animation: drop 1017ms -773ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(26) {
-  left: 87%;
+  left: 73%;
 }
 .wrap_window .rain_line:nth-child(26) .drop {
   width: 100%;
-  height: 74px;
+  height: 70px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1121ms -1395ms linear infinite;
+  animation: drop 1016ms -1856ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(27) {
-  left: 68%;
+  left: 80%;
 }
 .wrap_window .rain_line:nth-child(27) .drop {
   width: 100%;
-  height: 73px;
+  height: 60px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1032ms -1951ms linear infinite;
+  animation: drop 1106ms -779ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(28) {
-  left: 63%;
+  left: 88%;
 }
 .wrap_window .rain_line:nth-child(28) .drop {
   width: 100%;
-  height: 49px;
+  height: 66px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1168ms -113ms linear infinite;
+  animation: drop 1057ms -1583ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(29) {
-  left: 58%;
+  left: 16%;
 }
 .wrap_window .rain_line:nth-child(29) .drop {
   width: 100%;
-  height: 72px;
+  height: 49px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1145ms -1067ms linear infinite;
+  animation: drop 1090ms -622ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(30) {
-  left: 71%;
+  left: 76%;
 }
 .wrap_window .rain_line:nth-child(30) .drop {
   width: 100%;
-  height: 38px;
+  height: 45px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1195ms -1878ms linear infinite;
+  animation: drop 1149ms -94ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(31) {
-  left: 99%;
+  left: 68%;
 }
 .wrap_window .rain_line:nth-child(31) .drop {
   width: 100%;
-  height: 71px;
+  height: 61px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1165ms -790ms linear infinite;
+  animation: drop 1092ms -1693ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(32) {
-  left: 17%;
+  left: 36%;
 }
 .wrap_window .rain_line:nth-child(32) .drop {
   width: 100%;
-  height: 43px;
+  height: 66px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1104ms -1590ms linear infinite;
+  animation: drop 1004ms -184ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(33) {
-  left: 100%;
+  left: 98%;
 }
 .wrap_window .rain_line:nth-child(33) .drop {
   width: 100%;
-  height: 74px;
+  height: 72px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1004ms -38ms linear infinite;
+  animation: drop 1104ms -942ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(34) {
-  left: 71%;
+  left: 21%;
 }
 .wrap_window .rain_line:nth-child(34) .drop {
   width: 100%;
-  height: 50px;
+  height: 75px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1037ms -785ms linear infinite;
+  animation: drop 1031ms -711ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(35) {
-  left: 12%;
+  left: 89%;
 }
 .wrap_window .rain_line:nth-child(35) .drop {
   width: 100%;
-  height: 76px;
+  height: 58px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1050ms -725ms linear infinite;
+  animation: drop 1116ms -442ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(36) {
-  left: 77%;
+  left: 3%;
 }
 .wrap_window .rain_line:nth-child(36) .drop {
   width: 100%;
-  height: 69px;
+  height: 45px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1182ms -1956ms linear infinite;
+  animation: drop 1100ms -1177ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(37) {
-  left: 30%;
+  left: 98%;
 }
 .wrap_window .rain_line:nth-child(37) .drop {
   width: 100%;
-  height: 40px;
+  height: 45px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1013ms -883ms linear infinite;
+  animation: drop 1126ms -367ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(38) {
-  left: 47%;
+  left: 42%;
 }
 .wrap_window .rain_line:nth-child(38) .drop {
   width: 100%;
-  height: 63px;
+  height: 51px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1028ms -1551ms linear infinite;
+  animation: drop 1005ms -1709ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(39) {
-  left: 51%;
+  left: 1%;
 }
 .wrap_window .rain_line:nth-child(39) .drop {
   width: 100%;
-  height: 73px;
+  height: 67px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1182ms -426ms linear infinite;
+  animation: drop 1175ms -1173ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(40) {
-  left: 22%;
+  left: 28%;
 }
 .wrap_window .rain_line:nth-child(40) .drop {
   width: 100%;
-  height: 60px;
+  height: 80px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1008ms -1618ms linear infinite;
+  animation: drop 1038ms -1844ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(41) {
-  left: 39%;
+  left: 72%;
 }
 .wrap_window .rain_line:nth-child(41) .drop {
   width: 100%;
-  height: 36px;
+  height: 80px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1094ms -456ms linear infinite;
+  animation: drop 1124ms -1358ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(42) {
-  left: 14%;
+  left: 28%;
 }
 .wrap_window .rain_line:nth-child(42) .drop {
   width: 100%;
-  height: 39px;
+  height: 55px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1002ms -1106ms linear infinite;
+  animation: drop 1193ms -709ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(43) {
-  left: 46%;
+  left: 77%;
 }
 .wrap_window .rain_line:nth-child(43) .drop {
   width: 100%;
-  height: 62px;
+  height: 63px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1084ms -890ms linear infinite;
+  animation: drop 1197ms -126ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(44) {
-  left: 55%;
+  left: 11%;
 }
 .wrap_window .rain_line:nth-child(44) .drop {
   width: 100%;
-  height: 49px;
+  height: 34px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1081ms -228ms linear infinite;
+  animation: drop 1093ms -1826ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(45) {
-  left: 48%;
+  left: 5%;
 }
 .wrap_window .rain_line:nth-child(45) .drop {
   width: 100%;
-  height: 79px;
+  height: 42px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1073ms -1371ms linear infinite;
+  animation: drop 1089ms -724ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(46) {
-  left: 7%;
+  left: 33%;
 }
 .wrap_window .rain_line:nth-child(46) .drop {
   width: 100%;
-  height: 52px;
+  height: 79px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1034ms -1013ms linear infinite;
+  animation: drop 1170ms -1905ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(47) {
-  left: 47%;
+  left: 75%;
 }
 .wrap_window .rain_line:nth-child(47) .drop {
   width: 100%;
-  height: 33px;
+  height: 34px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1097ms -548ms linear infinite;
+  animation: drop 1072ms -863ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(48) {
-  left: 95%;
+  left: 45%;
 }
 .wrap_window .rain_line:nth-child(48) .drop {
   width: 100%;
-  height: 77px;
+  height: 46px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1024ms -118ms linear infinite;
+  animation: drop 1061ms -4ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(49) {
-  left: 75%;
+  left: 91%;
 }
 .wrap_window .rain_line:nth-child(49) .drop {
   width: 100%;
-  height: 59px;
+  height: 36px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1161ms -1179ms linear infinite;
+  animation: drop 1082ms -655ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(50) {
-  left: 80%;
+  left: 66%;
 }
 .wrap_window .rain_line:nth-child(50) .drop {
   width: 100%;
-  height: 51px;
+  height: 37px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1180ms -1684ms linear infinite;
+  animation: drop 1045ms -370ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(51) {
-  left: 2%;
+  left: 27%;
 }
 .wrap_window .rain_line:nth-child(51) .drop {
   width: 100%;
-  height: 38px;
+  height: 47px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1072ms -1878ms linear infinite;
+  animation: drop 1045ms -324ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(52) {
-  left: 80%;
+  left: 96%;
 }
 .wrap_window .rain_line:nth-child(52) .drop {
   width: 100%;
-  height: 77px;
+  height: 61px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1173ms -758ms linear infinite;
+  animation: drop 1153ms -861ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(53) {
-  left: 7%;
+  left: 91%;
 }
 .wrap_window .rain_line:nth-child(53) .drop {
   width: 100%;
-  height: 64px;
+  height: 70px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1107ms -1768ms linear infinite;
+  animation: drop 1033ms -1321ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(54) {
-  left: 85%;
+  left: 47%;
 }
 .wrap_window .rain_line:nth-child(54) .drop {
   width: 100%;
   height: 33px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1061ms -807ms linear infinite;
+  animation: drop 1137ms -1457ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(55) {
-  left: 94%;
+  left: 67%;
 }
 .wrap_window .rain_line:nth-child(55) .drop {
   width: 100%;
-  height: 64px;
+  height: 42px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1020ms -1820ms linear infinite;
+  animation: drop 1073ms -302ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(56) {
-  left: 68%;
+  left: 81%;
 }
 .wrap_window .rain_line:nth-child(56) .drop {
   width: 100%;
-  height: 51px;
+  height: 33px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1065ms -1139ms linear infinite;
+  animation: drop 1188ms -1138ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(57) {
-  left: 41%;
+  left: 97%;
 }
 .wrap_window .rain_line:nth-child(57) .drop {
   width: 100%;
-  height: 42px;
+  height: 36px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1020ms -126ms linear infinite;
+  animation: drop 1055ms -1065ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(58) {
-  left: 50%;
+  left: 41%;
 }
 .wrap_window .rain_line:nth-child(58) .drop {
   width: 100%;
-  height: 50px;
+  height: 38px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1042ms -1380ms linear infinite;
+  animation: drop 1080ms -1025ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(59) {
-  left: 70%;
+  left: 75%;
 }
 .wrap_window .rain_line:nth-child(59) .drop {
   width: 100%;
-  height: 44px;
+  height: 62px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1069ms -23ms linear infinite;
+  animation: drop 1160ms -290ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(60) {
-  left: 69%;
+  left: 62%;
 }
 .wrap_window .rain_line:nth-child(60) .drop {
   width: 100%;
-  height: 38px;
+  height: 66px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1151ms -1204ms linear infinite;
+  animation: drop 1048ms -1681ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(61) {
-  left: 82%;
+  left: 92%;
 }
 .wrap_window .rain_line:nth-child(61) .drop {
   width: 100%;
-  height: 35px;
+  height: 79px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1068ms -237ms linear infinite;
+  animation: drop 1176ms -175ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(62) {
-  left: 90%;
+  left: 60%;
 }
 .wrap_window .rain_line:nth-child(62) .drop {
   width: 100%;
-  height: 61px;
+  height: 52px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1048ms -544ms linear infinite;
+  animation: drop 1104ms -1195ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(63) {
-  left: 28%;
+  left: 4%;
 }
 .wrap_window .rain_line:nth-child(63) .drop {
   width: 100%;
-  height: 73px;
+  height: 78px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1049ms -1072ms linear infinite;
+  animation: drop 1037ms -1308ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(64) {
-  left: 43%;
+  left: 2%;
 }
 .wrap_window .rain_line:nth-child(64) .drop {
   width: 100%;
-  height: 58px;
+  height: 32px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1025ms -674ms linear infinite;
+  animation: drop 1178ms -827ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(65) {
-  left: 2%;
+  left: 64%;
 }
 .wrap_window .rain_line:nth-child(65) .drop {
   width: 100%;
-  height: 57px;
+  height: 53px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1021ms -611ms linear infinite;
+  animation: drop 1188ms -1554ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(66) {
-  left: 3%;
+  left: 11%;
 }
 .wrap_window .rain_line:nth-child(66) .drop {
   width: 100%;
-  height: 76px;
+  height: 77px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1113ms -616ms linear infinite;
+  animation: drop 1100ms -1702ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(67) {
-  left: 47%;
+  left: 8%;
 }
 .wrap_window .rain_line:nth-child(67) .drop {
   width: 100%;
-  height: 35px;
+  height: 34px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1095ms -235ms linear infinite;
+  animation: drop 1196ms -1703ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(68) {
-  left: 26%;
+  left: 70%;
 }
 .wrap_window .rain_line:nth-child(68) .drop {
   width: 100%;
-  height: 33px;
+  height: 73px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1121ms -985ms linear infinite;
+  animation: drop 1006ms -1356ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(69) {
-  left: 6%;
+  left: 9%;
 }
 .wrap_window .rain_line:nth-child(69) .drop {
   width: 100%;
-  height: 41px;
+  height: 49px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1021ms -1938ms linear infinite;
+  animation: drop 1062ms -345ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(70) {
-  left: 41%;
+  left: 2%;
 }
 .wrap_window .rain_line:nth-child(70) .drop {
   width: 100%;
-  height: 70px;
+  height: 38px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1063ms -1995ms linear infinite;
+  animation: drop 1046ms -571ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(71) {
-  left: 24%;
+  left: 56%;
 }
 .wrap_window .rain_line:nth-child(71) .drop {
   width: 100%;
-  height: 50px;
+  height: 43px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1079ms -446ms linear infinite;
+  animation: drop 1021ms -66ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(72) {
-  left: 77%;
+  left: 71%;
 }
 .wrap_window .rain_line:nth-child(72) .drop {
   width: 100%;
-  height: 58px;
+  height: 46px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1193ms -1946ms linear infinite;
+  animation: drop 1154ms -1200ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(73) {
-  left: 17%;
+  left: 4%;
 }
 .wrap_window .rain_line:nth-child(73) .drop {
   width: 100%;
-  height: 38px;
+  height: 73px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1161ms -1398ms linear infinite;
+  animation: drop 1133ms -333ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(74) {
-  left: 7%;
+  left: 9%;
 }
 .wrap_window .rain_line:nth-child(74) .drop {
   width: 100%;
-  height: 55px;
+  height: 70px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1009ms -903ms linear infinite;
+  animation: drop 1014ms -18ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(75) {
-  left: 17%;
+  left: 20%;
 }
 .wrap_window .rain_line:nth-child(75) .drop {
   width: 100%;
-  height: 48px;
+  height: 70px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1170ms -1821ms linear infinite;
+  animation: drop 1129ms -1838ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(76) {
-  left: 9%;
+  left: 19%;
 }
 .wrap_window .rain_line:nth-child(76) .drop {
   width: 100%;
-  height: 43px;
+  height: 77px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1025ms -1370ms linear infinite;
+  animation: drop 1170ms -1983ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(77) {
-  left: 34%;
+  left: 29%;
 }
 .wrap_window .rain_line:nth-child(77) .drop {
   width: 100%;
-  height: 36px;
+  height: 43px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1181ms -1882ms linear infinite;
+  animation: drop 1137ms -759ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(78) {
-  left: 62%;
+  left: 35%;
 }
 .wrap_window .rain_line:nth-child(78) .drop {
   width: 100%;
-  height: 32px;
+  height: 46px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1014ms -97ms linear infinite;
+  animation: drop 1030ms -949ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(79) {
-  left: 100%;
+  left: 75%;
 }
 .wrap_window .rain_line:nth-child(79) .drop {
   width: 100%;
-  height: 74px;
+  height: 39px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1183ms -1568ms linear infinite;
+  animation: drop 1155ms -1889ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(80) {
-  left: 84%;
+  left: 9%;
 }
 .wrap_window .rain_line:nth-child(80) .drop {
   width: 100%;
-  height: 44px;
+  height: 37px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1106ms -785ms linear infinite;
+  animation: drop 1052ms -1576ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(81) {
-  left: 98%;
+  left: 3%;
 }
 .wrap_window .rain_line:nth-child(81) .drop {
   width: 100%;
-  height: 51px;
+  height: 39px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1093ms -1625ms linear infinite;
+  animation: drop 1076ms -1481ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(82) {
-  left: 86%;
+  left: 91%;
 }
 .wrap_window .rain_line:nth-child(82) .drop {
   width: 100%;
-  height: 53px;
+  height: 32px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1080ms -1224ms linear infinite;
+  animation: drop 1005ms -1067ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(83) {
-  left: 60%;
+  left: 99%;
 }
 .wrap_window .rain_line:nth-child(83) .drop {
   width: 100%;
-  height: 76px;
+  height: 53px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1194ms -60ms linear infinite;
+  animation: drop 1127ms -661ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(84) {
-  left: 22%;
+  left: 16%;
 }
 .wrap_window .rain_line:nth-child(84) .drop {
   width: 100%;
-  height: 69px;
+  height: 43px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1182ms -1490ms linear infinite;
+  animation: drop 1111ms -122ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(85) {
-  left: 93%;
+  left: 55%;
 }
 .wrap_window .rain_line:nth-child(85) .drop {
   width: 100%;
-  height: 32px;
+  height: 41px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1032ms -1038ms linear infinite;
+  animation: drop 1046ms -202ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(86) {
-  left: 51%;
+  left: 60%;
 }
 .wrap_window .rain_line:nth-child(86) .drop {
   width: 100%;
-  height: 42px;
+  height: 51px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1027ms -894ms linear infinite;
+  animation: drop 1095ms -791ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(87) {
-  left: 33%;
+  left: 79%;
 }
 .wrap_window .rain_line:nth-child(87) .drop {
   width: 100%;
-  height: 40px;
+  height: 80px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1067ms -968ms linear infinite;
+  animation: drop 1030ms -186ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(88) {
   left: 4%;
 }
 .wrap_window .rain_line:nth-child(88) .drop {
   width: 100%;
-  height: 54px;
+  height: 61px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1033ms -1896ms linear infinite;
+  animation: drop 1172ms -1567ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(89) {
-  left: 73%;
+  left: 78%;
 }
 .wrap_window .rain_line:nth-child(89) .drop {
   width: 100%;
-  height: 60px;
+  height: 76px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1039ms -732ms linear infinite;
+  animation: drop 1094ms -813ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(90) {
-  left: 50%;
+  left: 73%;
 }
 .wrap_window .rain_line:nth-child(90) .drop {
   width: 100%;
-  height: 77px;
+  height: 53px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1088ms -335ms linear infinite;
+  animation: drop 1102ms -1171ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(91) {
-  left: 46%;
+  left: 2%;
 }
 .wrap_window .rain_line:nth-child(91) .drop {
   width: 100%;
-  height: 63px;
+  height: 46px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1190ms -1639ms linear infinite;
+  animation: drop 1095ms -1448ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(92) {
-  left: 36%;
+  left: 63%;
 }
 .wrap_window .rain_line:nth-child(92) .drop {
   width: 100%;
-  height: 71px;
+  height: 77px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1085ms -1314ms linear infinite;
+  animation: drop 1105ms -916ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(93) {
-  left: 13%;
+  left: 80%;
 }
 .wrap_window .rain_line:nth-child(93) .drop {
   width: 100%;
-  height: 46px;
+  height: 72px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1155ms -104ms linear infinite;
+  animation: drop 1091ms -1852ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(94) {
-  left: 7%;
+  left: 75%;
 }
 .wrap_window .rain_line:nth-child(94) .drop {
   width: 100%;
-  height: 66px;
+  height: 49px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1158ms -1174ms linear infinite;
+  animation: drop 1112ms -424ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(95) {
-  left: 39%;
+  left: 63%;
 }
 .wrap_window .rain_line:nth-child(95) .drop {
   width: 100%;
-  height: 71px;
+  height: 45px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1158ms -878ms linear infinite;
+  animation: drop 1140ms -1596ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(96) {
-  left: 49%;
+  left: 61%;
 }
 .wrap_window .rain_line:nth-child(96) .drop {
   width: 100%;
-  height: 37px;
+  height: 33px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1064ms -767ms linear infinite;
+  animation: drop 1066ms -1997ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(97) {
-  left: 7%;
+  left: 77%;
 }
 .wrap_window .rain_line:nth-child(97) .drop {
   width: 100%;
-  height: 66px;
+  height: 56px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1141ms -506ms linear infinite;
+  animation: drop 1103ms -790ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(98) {
-  left: 4%;
+  left: 17%;
 }
 .wrap_window .rain_line:nth-child(98) .drop {
   width: 100%;
-  height: 74px;
+  height: 51px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1187ms -1009ms linear infinite;
+  animation: drop 1135ms -662ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(99) {
-  left: 7%;
+  left: 11%;
 }
 .wrap_window .rain_line:nth-child(99) .drop {
   width: 100%;
-  height: 60px;
+  height: 35px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1169ms -653ms linear infinite;
+  animation: drop 1042ms -874ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(100) {
-  left: 32%;
+  left: 85%;
 }
 .wrap_window .rain_line:nth-child(100) .drop {
   width: 100%;
-  height: 66px;
+  height: 33px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1113ms -1727ms linear infinite;
+  animation: drop 1013ms -280ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(101) {
-  left: 19%;
+  left: 66%;
 }
 .wrap_window .rain_line:nth-child(101) .drop {
   width: 100%;
-  height: 58px;
+  height: 79px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1015ms -1699ms linear infinite;
+  animation: drop 1003ms -903ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(102) {
-  left: 77%;
+  left: 19%;
 }
 .wrap_window .rain_line:nth-child(102) .drop {
   width: 100%;
-  height: 68px;
+  height: 62px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1164ms -1558ms linear infinite;
+  animation: drop 1054ms -841ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(103) {
-  left: 82%;
+  left: 51%;
 }
 .wrap_window .rain_line:nth-child(103) .drop {
   width: 100%;
-  height: 73px;
+  height: 44px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1173ms -435ms linear infinite;
+  animation: drop 1008ms -951ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(104) {
-  left: 98%;
+  left: 22%;
 }
 .wrap_window .rain_line:nth-child(104) .drop {
   width: 100%;
-  height: 45px;
+  height: 61px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1162ms -651ms linear infinite;
+  animation: drop 1052ms -1832ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(105) {
-  left: 63%;
+  left: 31%;
 }
 .wrap_window .rain_line:nth-child(105) .drop {
   width: 100%;
-  height: 32px;
+  height: 31px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1066ms -1706ms linear infinite;
+  animation: drop 1095ms -338ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(106) {
-  left: 85%;
+  left: 89%;
 }
 .wrap_window .rain_line:nth-child(106) .drop {
   width: 100%;
-  height: 72px;
+  height: 37px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1082ms -1595ms linear infinite;
+  animation: drop 1033ms -842ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(107) {
-  left: 57%;
+  left: 15%;
 }
 .wrap_window .rain_line:nth-child(107) .drop {
   width: 100%;
-  height: 58px;
+  height: 66px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1090ms -272ms linear infinite;
+  animation: drop 1122ms -1298ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(108) {
-  left: 15%;
+  left: 36%;
 }
 .wrap_window .rain_line:nth-child(108) .drop {
   width: 100%;
-  height: 44px;
+  height: 45px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1107ms -1298ms linear infinite;
+  animation: drop 1136ms -1497ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(109) {
-  left: 97%;
+  left: 92%;
 }
 .wrap_window .rain_line:nth-child(109) .drop {
   width: 100%;
-  height: 70px;
+  height: 65px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1129ms -980ms linear infinite;
+  animation: drop 1007ms -687ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(110) {
-  left: 52%;
+  left: 24%;
 }
 .wrap_window .rain_line:nth-child(110) .drop {
   width: 100%;
-  height: 50px;
+  height: 36px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1025ms -676ms linear infinite;
+  animation: drop 1131ms -1283ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(111) {
-  left: 66%;
+  left: 63%;
 }
 .wrap_window .rain_line:nth-child(111) .drop {
   width: 100%;
-  height: 46px;
+  height: 53px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1013ms -1280ms linear infinite;
+  animation: drop 1157ms -1927ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(112) {
-  left: 87%;
+  left: 29%;
 }
 .wrap_window .rain_line:nth-child(112) .drop {
   width: 100%;
-  height: 43px;
+  height: 36px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1001ms -931ms linear infinite;
+  animation: drop 1194ms -323ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(113) {
-  left: 10%;
+  left: 94%;
 }
 .wrap_window .rain_line:nth-child(113) .drop {
   width: 100%;
-  height: 72px;
+  height: 53px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1159ms -164ms linear infinite;
+  animation: drop 1106ms -1329ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(114) {
-  left: 70%;
+  left: 3%;
 }
 .wrap_window .rain_line:nth-child(114) .drop {
   width: 100%;
-  height: 48px;
+  height: 49px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1090ms -272ms linear infinite;
+  animation: drop 1001ms -1137ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(115) {
-  left: 63%;
+  left: 5%;
 }
 .wrap_window .rain_line:nth-child(115) .drop {
   width: 100%;
-  height: 71px;
+  height: 44px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1185ms -993ms linear infinite;
+  animation: drop 1026ms -1758ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(116) {
-  left: 41%;
+  left: 69%;
 }
 .wrap_window .rain_line:nth-child(116) .drop {
   width: 100%;
-  height: 46px;
+  height: 31px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1124ms -1597ms linear infinite;
+  animation: drop 1163ms -1538ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(117) {
-  left: 23%;
+  left: 64%;
 }
 .wrap_window .rain_line:nth-child(117) .drop {
   width: 100%;
-  height: 42px;
+  height: 76px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1047ms -1941ms linear infinite;
+  animation: drop 1084ms -788ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(118) {
-  left: 3%;
+  left: 59%;
 }
 .wrap_window .rain_line:nth-child(118) .drop {
   width: 100%;
-  height: 49px;
+  height: 38px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1044ms -1121ms linear infinite;
+  animation: drop 1104ms -565ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(119) {
-  left: 79%;
+  left: 17%;
 }
 .wrap_window .rain_line:nth-child(119) .drop {
   width: 100%;
-  height: 80px;
+  height: 75px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1168ms -96ms linear infinite;
+  animation: drop 1075ms -1145ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(120) {
-  left: 18%;
+  left: 35%;
 }
 .wrap_window .rain_line:nth-child(120) .drop {
   width: 100%;
-  height: 48px;
+  height: 50px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1057ms -646ms linear infinite;
+  animation: drop 1088ms -1465ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(121) {
-  left: 90%;
+  left: 79%;
 }
 .wrap_window .rain_line:nth-child(121) .drop {
   width: 100%;
-  height: 57px;
+  height: 46px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1192ms -1941ms linear infinite;
+  animation: drop 1200ms -826ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(122) {
-  left: 61%;
+  left: 28%;
 }
 .wrap_window .rain_line:nth-child(122) .drop {
   width: 100%;
-  height: 60px;
+  height: 41px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1016ms -463ms linear infinite;
+  animation: drop 1001ms -1885ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(123) {
-  left: 15%;
+  left: 59%;
 }
 .wrap_window .rain_line:nth-child(123) .drop {
   width: 100%;
-  height: 31px;
+  height: 70px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1079ms -142ms linear infinite;
+  animation: drop 1060ms -1410ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(124) {
-  left: 49%;
+  left: 46%;
 }
 .wrap_window .rain_line:nth-child(124) .drop {
   width: 100%;
-  height: 68px;
+  height: 49px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1010ms -1687ms linear infinite;
+  animation: drop 1069ms -1237ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(125) {
-  left: 44%;
+  left: 11%;
 }
 .wrap_window .rain_line:nth-child(125) .drop {
   width: 100%;
-  height: 71px;
+  height: 50px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1138ms -315ms linear infinite;
+  animation: drop 1122ms -51ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(126) {
-  left: 77%;
+  left: 17%;
 }
 .wrap_window .rain_line:nth-child(126) .drop {
   width: 100%;
-  height: 79px;
+  height: 56px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1065ms -973ms linear infinite;
+  animation: drop 1009ms -1679ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(127) {
-  left: 66%;
+  left: 4%;
 }
 .wrap_window .rain_line:nth-child(127) .drop {
   width: 100%;
-  height: 43px;
+  height: 36px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1115ms -506ms linear infinite;
+  animation: drop 1045ms -1823ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(128) {
-  left: 4%;
+  left: 54%;
 }
 .wrap_window .rain_line:nth-child(128) .drop {
   width: 100%;
-  height: 45px;
+  height: 54px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1168ms -1579ms linear infinite;
+  animation: drop 1167ms -1119ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(129) {
-  left: 59%;
+  left: 40%;
 }
 .wrap_window .rain_line:nth-child(129) .drop {
   width: 100%;
-  height: 44px;
+  height: 53px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1050ms -1826ms linear infinite;
+  animation: drop 1196ms -128ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(130) {
-  left: 74%;
+  left: 64%;
 }
 .wrap_window .rain_line:nth-child(130) .drop {
   width: 100%;
-  height: 64px;
+  height: 40px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1022ms -1178ms linear infinite;
+  animation: drop 1193ms -973ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(131) {
-  left: 56%;
+  left: 84%;
 }
 .wrap_window .rain_line:nth-child(131) .drop {
   width: 100%;
-  height: 38px;
+  height: 53px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1129ms -510ms linear infinite;
+  animation: drop 1158ms -1017ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(132) {
-  left: 8%;
+  left: 49%;
 }
 .wrap_window .rain_line:nth-child(132) .drop {
   width: 100%;
-  height: 69px;
+  height: 37px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1009ms -1650ms linear infinite;
+  animation: drop 1167ms -530ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(133) {
-  left: 52%;
+  left: 35%;
 }
 .wrap_window .rain_line:nth-child(133) .drop {
   width: 100%;
-  height: 79px;
+  height: 43px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1198ms -1235ms linear infinite;
+  animation: drop 1063ms -374ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(134) {
-  left: 45%;
+  left: 56%;
 }
 .wrap_window .rain_line:nth-child(134) .drop {
   width: 100%;
-  height: 54px;
+  height: 58px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1007ms -1254ms linear infinite;
+  animation: drop 1136ms -1828ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(135) {
-  left: 3%;
+  left: 20%;
 }
 .wrap_window .rain_line:nth-child(135) .drop {
   width: 100%;
-  height: 40px;
+  height: 69px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1103ms -589ms linear infinite;
+  animation: drop 1104ms -1447ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(136) {
-  left: 38%;
+  left: 47%;
 }
 .wrap_window .rain_line:nth-child(136) .drop {
   width: 100%;
-  height: 60px;
+  height: 52px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1176ms -639ms linear infinite;
+  animation: drop 1105ms -1061ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(137) {
-  left: 15%;
+  left: 54%;
 }
 .wrap_window .rain_line:nth-child(137) .drop {
   width: 100%;
-  height: 72px;
+  height: 65px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1200ms -1755ms linear infinite;
+  animation: drop 1059ms -1468ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(138) {
-  left: 79%;
+  left: 54%;
 }
 .wrap_window .rain_line:nth-child(138) .drop {
   width: 100%;
-  height: 36px;
+  height: 34px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1076ms -173ms linear infinite;
+  animation: drop 1164ms -1438ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(139) {
-  left: 62%;
+  left: 4%;
 }
 .wrap_window .rain_line:nth-child(139) .drop {
   width: 100%;
-  height: 57px;
+  height: 47px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1054ms -663ms linear infinite;
+  animation: drop 1145ms -1682ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(140) {
-  left: 57%;
+  left: 52%;
 }
 .wrap_window .rain_line:nth-child(140) .drop {
   width: 100%;
-  height: 69px;
+  height: 64px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1039ms -294ms linear infinite;
+  animation: drop 1076ms -767ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(141) {
-  left: 63%;
+  left: 88%;
 }
 .wrap_window .rain_line:nth-child(141) .drop {
   width: 100%;
-  height: 48px;
+  height: 37px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1079ms -1221ms linear infinite;
+  animation: drop 1065ms -1766ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(142) {
-  left: 66%;
+  left: 41%;
 }
 .wrap_window .rain_line:nth-child(142) .drop {
   width: 100%;
-  height: 57px;
+  height: 38px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1140ms -504ms linear infinite;
+  animation: drop 1026ms -497ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(143) {
-  left: 50%;
+  left: 40%;
 }
 .wrap_window .rain_line:nth-child(143) .drop {
   width: 100%;
-  height: 53px;
+  height: 58px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1103ms -632ms linear infinite;
+  animation: drop 1024ms -770ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(144) {
-  left: 32%;
+  left: 87%;
 }
 .wrap_window .rain_line:nth-child(144) .drop {
   width: 100%;
-  height: 71px;
+  height: 45px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1094ms -417ms linear infinite;
+  animation: drop 1069ms -752ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(145) {
-  left: 59%;
+  left: 44%;
 }
 .wrap_window .rain_line:nth-child(145) .drop {
   width: 100%;
-  height: 78px;
+  height: 44px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1199ms -227ms linear infinite;
+  animation: drop 1099ms -235ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(146) {
-  left: 16%;
+  left: 90%;
 }
 .wrap_window .rain_line:nth-child(146) .drop {
   width: 100%;
-  height: 43px;
+  height: 55px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1049ms -1008ms linear infinite;
+  animation: drop 1104ms -1941ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(147) {
-  left: 89%;
+  left: 40%;
 }
 .wrap_window .rain_line:nth-child(147) .drop {
   width: 100%;
-  height: 61px;
+  height: 65px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1084ms -791ms linear infinite;
+  animation: drop 1107ms -324ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(148) {
-  left: 30%;
+  left: 42%;
 }
 .wrap_window .rain_line:nth-child(148) .drop {
   width: 100%;
-  height: 68px;
+  height: 61px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1032ms -2000ms linear infinite;
+  animation: drop 1048ms -1466ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(149) {
-  left: 97%;
+  left: 27%;
 }
 .wrap_window .rain_line:nth-child(149) .drop {
   width: 100%;
-  height: 43px;
+  height: 33px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1046ms -1257ms linear infinite;
+  animation: drop 1160ms -635ms linear infinite;
 }
 .wrap_window .rain_line:nth-child(150) {
-  left: 12%;
+  left: 36%;
 }
 .wrap_window .rain_line:nth-child(150) .drop {
   width: 100%;
-  height: 58px;
+  height: 33px;
   background: linear-gradient(to bottom, rgba(200, 200, 200, 0) 0%, rgb(200, 200, 200) 70%, rgba(200, 200, 200, 0) 100%);
-  animation: drop 1119ms -1618ms linear infinite;
+  animation: drop 1138ms -1050ms linear infinite;
 }
 
 @keyframes drop {
