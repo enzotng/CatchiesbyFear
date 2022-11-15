@@ -8,3 +8,11 @@ var curseur = document.querySelector('.pointer');
 let tlPointer = gsap.timeline({paused: true, defaults: {duration: 0.3}})
 tlPointer.to(".pointer", {"background-color": "#efeee5", "border-radius": "50%", "width": "45px", "height": "45px"})
 tlPointer.play()
+
+function overLink() {
+  tlPointer.reverse()
+}
+
+function outLink() {
+  tlPointer.play()
+}

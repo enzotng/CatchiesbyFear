@@ -5,13 +5,7 @@ let compteurBis = 1
 const buttonSkipTxtAmbiance = document.getElementById('skipAmbiance')
 const scream = new Audio('./../assets/sounds/girl_scream_shortwav-14510.mp3');
 
-function overLink() {
-  tlPointer.reverse()
-}
 
-function outLink() {
-  tlPointer.play()
-}
 const eyes = document.querySelector('.eyes')
 function eyesDisepearOver(){
   eyes.style.opacity = "0"
@@ -156,9 +150,14 @@ function closeWindow() {
 
 let tlCadavre = gsap.timeline({paused: true})
 .to('.cadavre', {"right": "300vh", duration: 1.5})
+.to('.overlay_cadavre', {"display": "block"}, "<")
+.to('.overlay_cadavre', {"clip-path": "circle(70.7% at 50% 50%)"})
 
 function cadavreMove(){
   tlCadavre.play();
+  setTimeout(() => {
+    document.location.href = "/recit.html"
+  }, 3000);
 }
 
 function screamAmbiance() {
@@ -232,8 +231,8 @@ function smileReverse(){
 let tlRythme2 = gsap.timeline({paused: true})
 .to('#skipRythme1', {"opacity" : "0", "top": "290vh"})
 .to('.cd_rythme', {"background": "radial-gradient(circle 15vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"}, "<0.1")
-.to('.light_rythme', {"top": "200vh", duration:4})
-.to('.overlay_rythme', {"height": "300vh", duration:4}, "<")
+.to('.light_rythme', {"top": "200vh", duration:3})
+.to('.overlay_rythme', {"height": "300vh", duration:3}, "<")
 .to('.overlay_rythme p:nth-of-type(2)', {"opacity": "0"}, "<")
 .to('.videoRythme', {"opacity": "1"}, "<")
 .to('.cd_rythme', {"background": "radial-gradient(circle 50vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"}, "<3")
@@ -254,9 +253,17 @@ function skipRythme() {
 
 let tlRythme3 = gsap.timeline({paused: true})
 .to('.cd_rythme', {"background": "radial-gradient(circle 15vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"}, "<0.1")
-.to('.light_rythme', {"top": "300vh", duration:4})
-.to('.overlay_rythme', {"height": "400vh", duration:4}, "<")
+.to('.light_rythme', {"top": "300vh", duration:2})
+.to('.overlay_rythme', {"height": "400vh", duration:2}, "<")
 .to('.overlay_rythme p:nth-of-type(2)', {"opacity": "0"}, "<")
 .to('.overlay_rythme p:nth-of-type(3)', {"opacity": "1"}, "<")
 .to('.cd_rythme', {"background": "radial-gradient(circle 50vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"}, "<3")
+
+
+
+function finishRythme() {
+  setTimeout(() => {
+    tlLooseRythme.play()
+  }, 10000);
+}
 

@@ -14,8 +14,13 @@
     p{
       font-family: $subtitle;
       line-height: 1.2;
-      font-size: 1.35em;
+      font-size: clamp(1em, 1.525vw, 1.5em);
       opacity: 0;
+      padding-bottom: 40px;
+    }
+    button{
+      position: absolute;
+      left: 42%;
     }
   }
   .wrap_loader {

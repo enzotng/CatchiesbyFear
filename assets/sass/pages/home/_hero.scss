@@ -273,6 +273,7 @@
       transition: opacity 0.5s linear;
       line-height: 1.40;
       z-index: -1;
+      padding-bottom: 1vh;
       &:nth-of-type(n+3){
         position: absolute;
         top: 50%; left: 50%; 
@@ -414,4 +415,17 @@
       }
     }
   
+}
+
+.overlay_cadavre{
+  width: 100%;
+  z-index: 15;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $background;
+  clip-path: circle(0% at 50% 50%);
+  transition: clip-path 0.5s ease-in-out;
 }
