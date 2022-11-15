@@ -25,3 +25,10 @@ a{
 .rouge{
   color: $light-red;
 }
+
+button{
+  background: transparent;
+  border: none;
+  font-family: $texte;
+  font-family: 18px;
+}
