@@ -1,4 +1,24 @@
-.wrap_loader{
+.wrap_loader_txt {
+  width: 100%;
+  height: 100vh;
+  background-color: #0E0E0E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 0.5s ease;
+  z-index: 5;
+  .loader_txt{
+    position: absolute;
+    width: 75vw;
+    p{
+      font-family: $subtitle;
+      line-height: 1.2;
+      font-size: 1.35em;
+      opacity: 0;
+    }
+  }
+  .wrap_loader {
     width: 100%;
     height: 100vh;
     background-color: #0E0E0E;
@@ -6,147 +26,160 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    img{
-        width: 225px;
-        opacity: 0;
-        animation: appear 1s ease-in-out forwards;
+
+    img {
+      width: 225px;
+      opacity: 0;
+      animation: appear 1s ease-in-out forwards;
     }
-    p{
-        text-align: center;
-        opacity: 0;
-        animation: appear 1s 1s ease-in-out forwards;
+
+    p {
+      text-align: center;
+      opacity: 0;
+      animation: appear 1s 1s ease-in-out forwards;
     }
-      .loaderbox{
-        display: flex;
-        justify-content: space-between;
-        height: calc(calc(8px + 4px) * 5);
-        width: calc(calc(8px + 4px) * 5);
-        opacity: 0;
-        position: absolute;
-        animation: appear 1s 0.5s ease-in-out forwards;
-        .loader{
-            transform: scaleY(.4);
-            height: 100%;
-            width: 8px;
-            background: $white;
-            animation-duration: 1.2s;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-            &.loader1{
-                animation-name: quiet;
-                // margin-left: 0px;
-              }
-              
-              &.loader2{
-                animation-name: loud;
-                // margin-left: calc(4px + calc(8px * 1));
-              }
-              
-              &.loader3{
-                animation-name: normal;
-                // margin-left: calc(8px + calc(8px * 2));
-              }
-              
-              &.loader4{
-                animation-name: loud;
-                // margin-left: calc(12px + calc(8px * 3))
-              }
-              
-              &.loader5{
-                animation-name: quiet;
-                // margin-left: calc(16px + calc(8px * 4));
-              }
-          }
+
+    .loaderbox {
+      display: flex;
+      justify-content: space-between;
+      height: calc(calc(8px + 4px) * 5);
+      width: calc(calc(8px + 4px) * 5);
+      opacity: 0;
+      position: absolute;
+      animation: appear 1s 0.5s ease-in-out forwards;
+
+      .loader {
+        transform: scaleY(.4);
+        height: 100%;
+        width: 8px;
+        background: $white;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+
+        &.loader1 {
+          animation-name: quiet;
+        }
+
+        &.loader2 {
+          animation-name: loud;
+        }
+
+        &.loader3 {
+          animation-name: normal;
+        }
+
+        &.loader4 {
+          animation-name: loud;
+        }
+
+        &.loader5 {
+          animation-name: quiet;
+        }
       }
-      .glitch{
-        color:white;
-        font-size:2em;
-        background-color: #0E0E0E;
-        opacity: 0;
+    }
+
+    .glitch {
+      color: white;
+      font-size: 2em;
+      background-color: #0E0E0E;
+      opacity: 0;
+      position: absolute;
+      animation: appear 1s 2.5s ease-in-out forwards;
+
+      &:after {
+        content: 'You are in danger';
         position: absolute;
-        animation: appear 1s 2.5s ease-in-out forwards;
-        &:after{
-            content:'You are in danger'; 
-            position:absolute;
-            left:2px;
-            width: 120%;
-            top:0;
-            color:white;
-            overflow:hidden;
-            background: #0E0E0E;
-            clip:rect(0,900px,0,0); 
-            animation:noise-anim 1s infinite linear alternate-reverse;
-          }
-          
-          &:before{
-            content:'You are in danger';
-            position:absolute;
-            left:-2px;
-            top:0;
-            width: 120%;
-            color:white;
-            overflow:hidden;
-            background: #0E0E0E;
-            clip:rect(0,900px,0,0); 
-            animation:noise-anim-2 3s infinite linear alternate-reverse;
-          }
+        left: 2px;
+        width: 120%;
+        top: 0;
+        color: white;
+        overflow: hidden;
+        background: #0E0E0E;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim 1s infinite linear alternate-reverse;
       }
-      
-     
+
+      &:before {
+        content: 'You are in danger';
+        position: absolute;
+        left: -2px;
+        top: 0;
+        width: 120%;
+        color: white;
+        overflow: hidden;
+        background: #0E0E0E;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim-2 3s infinite linear alternate-reverse;
+      }
+    }
+
+
+  }
 }
+
 @keyframes quiet {
-    25%{
-      transform: scaleY(.6);
-    }
-    50%{
-      transform: scaleY(.4);
-    }
-    75%{
-      transform: scaleY(.8);
-    }
-  }
-  
-  @keyframes normal {
-    25%{
-      transform: scaleY(1);
-    }
-    50%{
-      transform: scaleY(.4);
-    }
-    75%{
-      transform: scaleY(.6);
-    }
-  }
-  @keyframes loud {
-    25%{
-      transform: scaleY(1);
-    }
-    50%{
-      transform: scaleY(.4);
-    }
-    75%{
-      transform: scaleY(1.2);
-    }
-  }
-  @keyframes appear {
-    100%{
-      opacity: 1;
-    }
+  25% {
+    transform: scaleY(.6);
   }
 
-  @keyframes noise-anim{
-    @for $i from 0 through 20{
-      #{percentage($i * 0.05)}{
-        clip:rect(random(100)+px,9999px,random(100)+px,0);
-      }
-    }
+  50% {
+    transform: scaleY(.4);
   }
 
-  
-  @keyframes noise-anim-2{
-    @for $i from 0 through 20{
-      #{percentage($i * 0.05)}{
-        clip:rect(random(100)+px,9999px,random(100)+px,0);
-      }
+  75% {
+    transform: scaleY(.8);
+  }
+}
+
+@keyframes normal {
+  25% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(.4);
+  }
+
+  75% {
+    transform: scaleY(.6);
+  }
+}
+
+@keyframes loud {
+  25% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(.4);
+  }
+
+  75% {
+    transform: scaleY(1.2);
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes noise-anim {
+  @for $i from 0 through 20 {
+    #{percentage($i * 0.05)} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
     }
   }
+}
+
+
+@keyframes noise-anim-2 {
+  @for $i from 0 through 20 {
+    #{percentage($i * 0.05)} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+    }
+  }
+}

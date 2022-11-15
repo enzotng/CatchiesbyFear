@@ -1,16 +1,8 @@
 
 let compteur = 1
+let compteurBis = 1
  let dollPosition = -222;
-var curseur = document.querySelector('.pointer');
- var centreYcurseur = parseInt(getComputedStyle(curseur, null).height) / 2;
- var centreXcurseur = parseInt(getComputedStyle(curseur, null).width) / 2;
- window.addEventListener('mousemove', e => {
-    curseur.style.left = e.pageX - centreXcurseur + "px"
-      curseur.style.top = e.pageY - centreYcurseur + "px"
-  })
-let tlPointer = gsap.timeline({paused: true, defaults: {duration: 0.3}})
-tlPointer.to(".pointer", {"background-color": "#efeee5", "border-radius": "50%", "width": "45px", "height": "45px"})
-tlPointer.play()
+const buttonSkipTxtAmbiance = document.getElementById('skipAmbiance')
 function overLink() {
   tlPointer.reverse()
 }
@@ -36,16 +28,19 @@ let tlWindow = gsap.timeline({paused: true, onComplete: windowBis})
 .to(".wrap_ambiance", {"opacity": "1"}, "<1.5")
 
 
-let tlWindowBis = gsap.timeline({paused: true, onComplete: appearSwitch})
+let tlWindowBis = gsap.timeline({paused: true})
 .to('.wrap_txt_ambiance p:nth-of-type(1)', {"opacity": "1"}, '<1.5')
-.to('.wrap_txt_ambiance p:nth-of-type(2)', {"opacity": "1"}, '<3.5')
-.to('.wrap_txt_ambiance p', {"opacity": "0"}, '<12')
+.to('.wrap_txt_ambiance p:nth-of-type(2)', {"opacity": "1"}, '<2')
+.to('.wrap_txt_ambiance button', {"opacity": "1"}, '<2.5')
+
 
 function windowBis() {
   tlWindowBis.play()
 }
 
 let tlWindow2 = gsap.timeline({paused: true})
+.to('.wrap_txt_ambiance p', {"opacity": "0"})
+.to('.wrap_txt_ambiance button', {"opacity": "0"}, "<0.1")
 .to('.overlay_ambiance', {"display": "block"})
 .to('.overlay_ambiance', {"background": "rgb(0 0 0 0.95)"}, '<0.1')
 .to('.light_switch', {"opacity": "1"}, '<0.5')
@@ -85,12 +80,29 @@ function switchRestart() {
   compteur += 1
 }
 
+function skipTxtAmbiance() {
+  if(compteurBis === 1){
+    appearSwitch()
+  }
+  if(compteurBis === 2){
+    tlWindow6.play()
+  }
+  if(compteurBis === 3){
+    tlWindow7.play()
+  }
+  compteurBis += 1;
+}
+
 let tlWindow4= gsap.timeline({paused: true})
 .to('.overlay_ambiance', {"background": "black"})
 .to('.overlay_ambiance', {"background": "white"}, "<0.1")
 .to('.overlay_ambiance', {"display": "none"}, "<0.2")
 .to('.wrap_txt_ambiance p:nth-of-type(4)', {"opacity": "1"})
-.to('.wrap_txt_ambiance p', {"opacity": "0"}, '<12')
+.to('.wrap_txt_ambiance button', {"opacity": "1"}, "<4")
+
+let tlWindow7= gsap.timeline({paused: true})
+.to('.wrap_txt_ambiance p', {"opacity": "0"})
+.to('.wrap_txt_ambiance button', {"opacity": "0"}, "<0.1")
 .to('.overlay_ambiance', {"display": "block"})
 .to('.light_switch', {"display": "block"}, "<")
 .to('.overlay_ambiance', {"background": "rgb(0 0 0 0.95)"}, '<0.1')
@@ -102,7 +114,12 @@ let tlWindow3 = gsap.timeline({paused: true})
 .to('.overlay_ambiance', {"background": "white"}, "<0.1")
 .to('.overlay_ambiance', {"display": "none"}, "<0.2")
 .to('.wrap_txt_ambiance p:nth-of-type(3)', {"opacity": "1"})
-.to('.wrap_txt_ambiance p', {"opacity": "0"}, '<12')
+.to('.wrap_txt_ambiance button', {"opacity": "1"}, '<2.5')
+
+
+let tlWindow6 = gsap.timeline({paused: true})
+.to('.wrap_txt_ambiance p', {"opacity": "0"})
+.to('.wrap_txt_ambiance button', {"opacity": "0"}, "<0.1")
 .to('.overlay_ambiance', {"display": "block"})
 .to('.light_switch', {"display": "block"}, "<")
 .to('.overlay_ambiance', {"background": "rgb(0 0 0 0.95)"}, '<0.1')
@@ -115,7 +132,8 @@ let tlWindow5 = gsap.timeline({paused: true, onComplete: closeWindow})
 .to('.overlay_ambiance', {"background": "white"}, "<0.1")
 .to('.overlay_ambiance', {"display": "none"}, "<0.2")
 .to('.wrap_txt_ambiance p:nth-of-type(5)', {"opacity": "1"})
-.to('.wrap_txt_ambiance p', {"opacity": "0"}, '<12')
+.to('.wrap_txt_ambiance p', {"opacity": "0"}, '<20')
+.to('.creepy_doll_ambiance', {"top": "120vh"})
 .to('.overlay_ambiance', {"display": "block"})
 .to('.overlay_ambiance', {"background": "rgb(0 0 0 0.95)"}, '<0.1')
 .to('.overlay_ambiance', {"display": "none"}, '<0.1')
@@ -123,9 +141,8 @@ let tlWindow5 = gsap.timeline({paused: true, onComplete: closeWindow})
 .to('.overlay_ambiance', {"display": "block"}, "<0.1")
 .to('.wrap_ambiance', {"background": "black"}, '<')
 .to('.overlay_ambiance', {"background": "black"}, '<0.1')
-.to('.creepy_doll_ambiance', {"top": "120vh"})
-.to('.doll_jumpscare', {"height": "500vh", "opacity": "0"}, "<0.5")
-.to('.overlay_ambiance', {"clip-path": "inset(100% 0 0 0)"}, "<0.5")
+.to('.doll_jumpscare', {"height": "500vh", "opacity": "0", y: 1000, x: -1000}, "<0.5")
+.to('.overlay_ambiance', {"clip-path": "inset(100% 0 0 0)"}, "<2")
 .to('.wrap_ambiance', {"opacity": "0"}, "<")
 .to('.overlay_ambiance', {"display": "none"}, "<0.5")
 .to('.wrap_ambiance', {"display": "none"}, "<")
@@ -134,3 +151,34 @@ let tlWindow5 = gsap.timeline({paused: true, onComplete: closeWindow})
 function closeWindow() {
   tlWindow.reverse()
 }
+
+let tlCadavre = gsap.timeline({paused: true})
+.to('.cadavre', {"right": "300vh", duration: 1.5})
+
+function cadavreMove(){
+  tlCadavre.play();
+}
+
+
+let tlSmile = gsap.timeline({paused: true})
+.to('.creepy_smile', {"width": "600%", "right":"-100%", "top": "-500%", "z-index": "3", duration: 1.5})
+.to('.overlay_rythme', {"display": "flex"}, "<")
+.to('.overlay_rythme', {"opacity": "1"}, "<")
+.to('.creepy_smile', {"opacity": "0"}, "<2")
+.to('.creepy_smile', {"display": "none"})
+
+function smileMove(){
+  tlSmile.play();
+}
+
+let tlRythme = gsap.timeline({paused: true})
+.to('.cd_rythme', {"background": "radial-gradient(circle 15vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"})
+.to('.light_rythme', {"top": "100vh", duration:4})
+.to('.overlay_rythme', {"height": "200vh", duration:4}, "<")
+.to('.overlay_rythme p', {"opacity": "0"}, "<")
+
+function rythme1(){
+  tlRythme.play();
+}
+
+console.log();
