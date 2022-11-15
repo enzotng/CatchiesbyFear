@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $background;
+    height: 15vh;
+    margin-inline: 50px;
+    border-radius: 10px 10px 0 0;
+    font-size: 16px;
+    font-family: $subtitle;
+    color: $white;
+    text-transform: uppercase;
+}

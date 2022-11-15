@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: $background;
+    height: 15vh;
+    margin-inline: 50px;
+    border-radius: 0 0 10px 10px;
+    font-size: 16px;
+    font-family: $subtitle;
+    color: $white;
+    text-transform: uppercase;
+    img {
+        height: 64px;
+        width: 64px;
+        filter: drop-shadow(0px 0px 8px $light-red);
+        animation: logoCatchies 4s ease-in-out 0s infinite normal forwards;
+        transition: all 0.3s;
+        &:hover {
+            filter: drop-shadow(0px 0px 8px $background);
+            height: 60px;
+            width: 60px;
+        }
+    }
+}
+
+@keyframes logoCatchies {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

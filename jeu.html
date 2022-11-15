@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/png/icone.png" type="image/x-icon">
+  <title>The Game - Catchies by Fear</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/nocdr.css">
+</head>
+
+<body class="article_jeu">
+  <audio preload="auto">
+    <source src="./assets/sounds/Come-Play-with-Me.mp3" type="audio/mpeg">
+    <source src="./assets/sounds/Come-Play-with-Me.mp3" type="audio/ogg">
+    <!-- fallback for non supporting browsers goes here -->
+    <p>
+      Your browser does not support HTML audio, but you can still
+      <a href="./assets/sounds/Come-Play-with-Me.mp3">download the music</a>.
+    </p>
+  </audio>
+
+  <header>
+    <a href="index.html" target="_self"><img src="./assets/images/png/icone.png" alt="Icone Catchies by Fear"></a>
+  </header>
+  <main>
+
+    <div class="divJeu">
+      <button type="submit" class="btnJeu" onClick="window.location.reload();"><i
+          class="bi bi-arrow-clockwise"></i>Relancer le jeu</button>
+      <a href="#epilogue" class="btnJeu"><i class="bi bi-book"></i>Voir l'épilogue</a>
+    </div>
+    <section class="jeu">
+      <button type="submit" class="btnLancerJeu"><i class="bi bi-play-fill"></i>Lancer le jeu</button>
+    </section>
+    <div class="texte" id="epilogue">
+      <h1>Épilogue</h1>
+      <hr>
+      <p>
+        De simple thématique, l’horreur est devenue un type de jeu, qui a réussi à avoir une fanbase solide tout au long
+        de ces années. Cette réussite n’est pas seulement due au fait qu’on aime avoir peur. À mon avis, le jeu vidéo
+        d’horreur et ses sous-genres permettent de raconter des histoires différentes, pas celles de héros qui, par le
+        courage et une très grosse épée, vaincront n’importe quel adversaire, mais des histoires où nous, simples
+        mortels, affrontons avec ce que l’on a des choses terrifiantes. Des choses qui nous dépassent et qu’on
+        n’arriverait jamais à appréhender en temps normal, c’est ce que je trouve cool. Peu importe ce pourquoi nous
+        jouons aux jeux vidéo d’horreur, nous ne serons jamais réellement indifférents face à ce type de jeu vidéo et je
+        suis intimement persuadé que c’est ce qui fait la plus grande force du jeu vidéo horrifique. Celui de toujours
+        faire ressentir des émotions au joueur, d’une façon plus intense qu’un autre type de jeu vidéo.
+      </p><br>
+      <p>Et comme le dirait Guillaume Baychelier, vidéaste plasticien : “apprendre à porter un regard sensible et sans
+        terreur sur un terrible que l’on sait être de l’ordre du simulacre, dans l’espoir de se prémunir contre la
+        survenue d’un effroi bien réel”.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright © 2022 Catchies The Game. Tous droits réservés.</p>
+  </footer>
+
+  <div class="pointer"></div>
+
+  <script src="./assets/js/gsap.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
