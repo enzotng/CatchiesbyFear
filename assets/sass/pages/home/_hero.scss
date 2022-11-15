@@ -1,10 +1,20 @@
 .hero{
     height: 100vh;
     width: 100%;
+    // display: none;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    // opacity: 0;
+    transition: opacity 0.5s ease;
+    .cadavre{
+      transform: rotateY(180deg);
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 35%;
+    }
     .creepy-smile{
       width: 17%;
       position: absolute;

@@ -12,11 +12,12 @@
 </head>
 
 <body>
-    <audio src="./assets/sounds/Loyalty_Freak_Music_-_07_-_A_really_dark_alley.mp3" preload="auto" autoplay loop  type="audio/mpeg">
+    <audio src="./assets/sounds/Loyalty_Freak_Music_-_07_-_A_really_dark_alley.mp3" preload="auto" autoplay loop
+        type="audio/mpeg">
         <source src="./assets/sounds/Loyalty_Freak_Music_-_07_-_A_really_dark_alley.mp3" type="audio/mpeg">
     </audio>
-    <div class="body-particles">
-        <div class="pointer"></div>
+    <div class="pointer"></div>
+    <section class="wrap_loader_txt">
         <section class="wrap_loader">
             <div class="loaderbox">
                 <div class="loader loader1"></div>
@@ -33,10 +34,30 @@
             </p>
             <div class="glitch">Everything is fine</div>
         </section>
-    </div>
-    <div id="particles-js"></div>
+        <section class="loader_txt">
+            <p>
+                L’horreur est un genre décliné dans tous les médiums créatifs, que ce soit la littérature, le cinéma, la
+                peinture et bien évidemment le jeu vidéo. Nous allons donc nous intéresser à ce qu’est l’horreur dans le
+                milieu vidéoludique.
+                <br />
+                <br />
+                Ce site servira de webdocumentaire pour comprendre sa popularité.
+                En effet, c’est un genre qui voit beaucoup de contenu peu apprécié de la généralité, des contenus qui se
+                ressemblent énormément entre eux.
+                <br />
+                <br />
+                Mais l’explosion de l’accessibilité à la création et à l’achat avec le développement de unity et de
+                steam qui permette de facilement créer des jeux indépendants, qui sont parmi les plus terrifiants.
+                <br />
+                <br />
+                Je vous invite donc à cliquer sur les différents éléments de la page qui va suivre.
+            </p>
+            <button onclick="skipLoader()"><i class="bi bi-skip-forward"></i>Skip</button>
+        </section>
+    </section>
     <script src="./assets/js/gsap.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/pointer.js"></script>
+    <script src="assets/js/loader.js"></script>
 </body>
 
 </html>
