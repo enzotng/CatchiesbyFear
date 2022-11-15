@@ -3,6 +3,8 @@ let compteur = 1
 let compteurBis = 1
  let dollPosition = -222;
 const buttonSkipTxtAmbiance = document.getElementById('skipAmbiance')
+const scream = new Audio('./../assets/sounds/girl_scream_shortwav-14510.mp3');
+
 function overLink() {
   tlPointer.reverse()
 }
@@ -140,7 +142,7 @@ let tlWindow5 = gsap.timeline({paused: true, onComplete: closeWindow})
 .to('.overlay_ambiance', {"background": "white"}, '<')
 .to('.overlay_ambiance', {"display": "block"}, "<0.1")
 .to('.wrap_ambiance', {"background": "black"}, '<')
-.to('.overlay_ambiance', {"background": "black"}, '<0.1')
+.to('.overlay_ambiance', {"background": "black", onComplete: screamAmbiance}, '<0.1')
 .to('.doll_jumpscare', {"height": "500vh", "opacity": "0", y: 1000, x: -1000}, "<0.5")
 .to('.overlay_ambiance', {"clip-path": "inset(100% 0 0 0)"}, "<2")
 .to('.wrap_ambiance', {"opacity": "0"}, "<")
@@ -159,8 +161,13 @@ function cadavreMove(){
   tlCadavre.play();
 }
 
+function screamAmbiance() {
+  setTimeout(() => {
+    scream.play();
+  }, 1000);
+}
 
-let tlSmile = gsap.timeline({paused: true})
+let tlSmile = gsap.timeline({paused: true, onComplete: rythme1})
 .to('.creepy_smile', {"width": "600%", "right":"-100%", "top": "-500%", "z-index": "3", duration: 1.5})
 .to('.overlay_rythme', {"display": "flex"}, "<")
 .to('.overlay_rythme', {"opacity": "1"}, "<")
@@ -171,14 +178,85 @@ function smileMove(){
   tlSmile.play();
 }
 
-let tlRythme = gsap.timeline({paused: true})
-.to('.cd_rythme', {"background": "radial-gradient(circle 15vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"})
+let tlRythme = gsap.timeline({})
+.to('.cd_rythme', {"background": "radial-gradient(circle 15vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"}, "<3")
 .to('.light_rythme', {"top": "100vh", duration:4})
 .to('.overlay_rythme', {"height": "200vh", duration:4}, "<")
-.to('.overlay_rythme p', {"opacity": "0"}, "<")
+.to('.overlay_rythme p:nth-of-type(1)', {"opacity": "0"}, "<")
+.to('.overlay_rythme p:nth-of-type(2)', {"opacity": "1"}, "<")
+.to('.cd_rythme', {"background": "radial-gradient(circle 50vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"}, "<3")
+.to('#skipRythme1', {"opacity" : "1"})
 
 function rythme1(){
   tlRythme.play();
 }
 
-console.log();
+
+
+function elementPosition (a) {
+  let b = a.getBoundingClientRect();
+  return {
+    viewportY: (b.y || b.top)
+  }
+}
+const mon_element = document.querySelector('.death_overlay');
+
+window.addEventListener('scroll', function() {
+
+  let positions = elementPosition(mon_element);
+  if (positions.viewportY >= -235) {
+    tlLooseRythme.play()
+    setTimeout(() => {
+      scream.play();
+    }, 1000);
+  }
+
+});
+let tlLooseRythme = gsap.timeline({paused: true, onComplete: smileReverse})
+.to('.overlay_ambiance', {"background": "white", "z-index": "10"})
+.to('.overlay_ambiance', {"display": "block", "position" : "fixed", "top": "0", "left": "0"})
+.to('.overlay_ambiance', {"clip-path": "inset(0 0 0 0)"}, "<")
+.to('.overlay_ambiance', {"background": "black"}, '<0.1')
+.to('.doll_jumpscare', {"height": "500vh", "opacity": "0", y: 1000, x: -1000}, "<0.5")
+
+
+function smileReverse(){
+  tlSmile.reverse()
+  setTimeout(() => {
+    document.querySelector('.overlay_ambiance').style.display = "none"
+    document.querySelector('.overlay_ambiance').style.overflow = "hidden"
+  }, 2000);
+
+}
+
+let tlRythme2 = gsap.timeline({paused: true})
+.to('#skipRythme1', {"opacity" : "0", "top": "290vh"})
+.to('.cd_rythme', {"background": "radial-gradient(circle 15vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"}, "<0.1")
+.to('.light_rythme', {"top": "200vh", duration:4})
+.to('.overlay_rythme', {"height": "300vh", duration:4}, "<")
+.to('.overlay_rythme p:nth-of-type(2)', {"opacity": "0"}, "<")
+.to('.videoRythme', {"opacity": "1"}, "<")
+.to('.cd_rythme', {"background": "radial-gradient(circle 50vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"}, "<3")
+.to('#skipRythme1', {"opacity" : "1"})
+
+let compteur3 = 1
+
+
+function skipRythme() {
+  if (compteur3 === 1) {
+    tlRythme2.play()
+  }
+  if (compteur3 === 2) {
+    tlRythme3.play()
+  }
+  compteur3 += 1
+}
+
+let tlRythme3 = gsap.timeline({paused: true})
+.to('.cd_rythme', {"background": "radial-gradient(circle 15vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"}, "<0.1")
+.to('.light_rythme', {"top": "300vh", duration:4})
+.to('.overlay_rythme', {"height": "400vh", duration:4}, "<")
+.to('.overlay_rythme p:nth-of-type(2)', {"opacity": "0"}, "<")
+.to('.overlay_rythme p:nth-of-type(3)', {"opacity": "1"}, "<")
+.to('.cd_rythme', {"background": "radial-gradient(circle 50vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"}, "<3")
+

@@ -262,9 +262,7 @@
     z-index: 7;
     width: 70vw;
     transition: clip-path 0.5s cubic-bezier(0,0,.2,.8);
-    button{
-      margin-top: 150px;
-    }
+
     p{
       opacity: 0;
       font-size: clamp(0.8em, 2.5vw,1.55em);
@@ -344,6 +342,7 @@
   display: none;
   opacity: 0;
   position: absolute;
+  clip-path: inset(0 0 0 0);
     top: 0;
     left: 0;
     z-index: 7;
@@ -351,8 +350,41 @@
     justify-content: center;
     align-items: center;
     color: $background;
+    button{
+      &#skipRythme1{
+        position: absolute;
+        top: 190vh;
+        color: $background;
+        z-index: 9;
+        &:hover{
+          color: $light-red;
+        }
+      }
+    }
+    .videoRythme{
+      opacity: 1;
+      height: 60vh;
+      aspect-ratio: 16/9;
+      position: absolute;
+      top: 220vh;
+    }
     p{
     z-index: 8;
+    font-size: 1.5em;
+    &:nth-of-type(n+2){
+      opacity: 0;
+      position: absolute;
+      font-family: $subtitle;
+      width: 70vw;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    &:nth-of-type(2){
+      top: 125vh;
+    }
+    &:nth-of-type(3){
+      top: 325vh;
+    }
     }
     .light_rythme{
       position: absolute;
