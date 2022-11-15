@@ -1,6 +1,7 @@
 .hero{
     height: 100vh;
     width: 100%;
+    overflow: hidden;
     // display: none;
     display: flex;
     justify-content: center;
@@ -14,8 +15,9 @@
       right: 0;
       bottom: 0;
       width: 35%;
+      filter: drop-shadow(0px 0px 5px $dark-red);
     }
-    .creepy-smile{
+    .creepy_smile{
       width: 17%;
       position: absolute;
       top: 20px;
@@ -260,6 +262,9 @@
     z-index: 7;
     width: 70vw;
     transition: clip-path 0.5s cubic-bezier(0,0,.2,.8);
+    button{
+      margin-top: 150px;
+    }
     p{
       opacity: 0;
       font-size: clamp(0.8em, 2.5vw,1.55em);
@@ -269,6 +274,7 @@
       mix-blend-mode: difference;
       transition: opacity 0.5s linear;
       line-height: 1.40;
+      z-index: -1;
       &:nth-of-type(n+3){
         position: absolute;
         top: 50%; left: 50%; 
@@ -332,3 +338,48 @@
       text-align: center;
     }
   }
+.overlay_rythme{
+  width: 100%;
+  height: 100vh;
+  display: none;
+  opacity: 0;
+  position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    background-color: $white;
+    justify-content: center;
+    align-items: center;
+    color: $background;
+    p{
+    z-index: 8;
+    }
+    .light_rythme{
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      left: 0;
+      top: 0;
+      .death_overlay{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: -100vh;
+        opacity: 0.95;
+      }
+      .cd_rythme{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: radial-gradient(circle 50vmax,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 0.5) 80%,
+                rgba(0, 0, 0, 0.95) 100%);
+      }
+    }
+  
+}

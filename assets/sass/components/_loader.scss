@@ -8,27 +8,6 @@
   flex-direction: column;
   transition: opacity 0.5s ease;
   z-index: 5;
-  button{
-    opacity: 0;
-    background: transparent;
-    color: $white;
-    font-family: $texte;
-    font-size: 1.5em;
-    letter-spacing: 5px;
-    text-transform: lowercase;
-    border: none;
-    margin: 0;
-    padding: 0;
-    float: right;
-    transition: color 0.2s ease;
-    &:hover{
-      color: $light-red;
-    }
-    i{
-      font-size: 0.8em;
-      margin-right: 15px;
-    }
-  }
   .loader_txt{
     position: absolute;
     width: 75vw;

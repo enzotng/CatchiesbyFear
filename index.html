@@ -54,7 +54,7 @@
               <br />
               Je vous invite donc à cliquer sur les différents éléments de la page qui va suivre.
           </p>
-          <button onclick="skipLoader()"><i class="bi bi-skip-forward"></i>Skip</button>
+          <button class="btn_skip" onclick="skipLoader() id="skipLoader""><i class="bi bi-skip-forward"></i>Skip</button>
       </section>
   </section> -->
     <section class="hero">
@@ -63,7 +63,7 @@
         <span></span>
         <span></span>
       </div>
-      <img src="./assets/images/png/artworks-cqyhPfZQlBT5oMcz-awZTlg-t500x500-removebg-preview.png" alt="" class="creepy-smile">
+      <img src="./assets/images/png/artworks-cqyhPfZQlBT5oMcz-awZTlg-t500x500-removebg-preview.png" alt="" class="creepy_smile" onclick="smileMove()">
       <section class="wrap_window" onmouseover="eyesDisepearOver()" onmouseout="eyesDisepearOut()">
         <div class="window">
           <div class="rain_line">
@@ -124,11 +124,14 @@
     </div>
   </section>
   <div class="wrap_txt_ambiance">
-    <p class="txt_ambiance1"><i class="italique">“Present fears are less than horrible imaginings.”</i>, Shakespear</p>
-    <p class="txt_ambiance2">The deprivation of meaning terrifies man because it deprives him of his reference points, throwing him into the unknown. The same applies to the saturation of the senses. Once out of his comfort zone, it is enough to shock him by varying between restriction and saturation.</p>
-    <p class="txt_ambiance3">This is how Jumpscare was born. Sudden visual and audio appearances that will startle the viewer into a cold sweat. This is the preferred and most well-known mechanism of horror workers. However, be careful not to overuse it, as a game relying on this mechanic is bound to be a bad game. </p>
-    <p class="txt_ambiance4">The user must feel all control slipping away, as if thrown into the middle of the sea with no landmarks or land on the horizon, devoid of any anchorage to what they know. This places the user directly in a different world, a dangerous and terrifying world.</p>
-    <p class="txt_ambiance5">Putting the spectator on the edge of his seat is very important in horror. This permanent tension tends to put the viewer in danger in a situation where every minute of rest is a harbinger of an imminent threat. This feeling of insecurity often materialises in the form of a danger from which there is no escape (Halloween, It Follows, Slenderman and Devour)</p>
+    <p class="txt_ambiance1"><i class="italique">“L’inquiétude présente est moindre que l’horreur imaginaire.”</i>, Shakespear</p>
+    <br />
+    <br />
+    <p class="txt_ambiance2">La privation de sens terrifie l’Homme car il se retrouve sans repères, comme si il était jeté dans l’inconnu. Une fois sorti de sa zone de confort, il suffit de le choquer en variant entre restriction et saturation.</p>
+    <p class="txt_ambiance3">C’est comme ça que sont nés les Jumpscare. Les Jumpscares reposent sur ce mécanisme : ce sont des apparitions visuelles et sonores qui brusquent le joueur. C’est le mécanisme préféré et le plus connu des travailleurs de l’horreur. Mr. Tibout, streamer professionnel spécialisé dans le gameplay de jeux vidéo d’horreur, nous prévient : il ne faut surtout pas en abuser, un jeu se reposant sur cette seule mécanique sera à coup sûr un mauvais jeu car délaissant le scénario, partie primordiale selon lui. </p>
+    <p class="txt_ambiance4">Il faut que l'utilisateur sente tout contrôle lui échapper, comme si il était jeté en plein milieu de la mer sans repères ni terres à l’horizon, dépourvu de tout ancrage à ce qu’il connaît. Cela place directement l’utilisateur dans un monde différent, un monde dangereux et terrifiant.</p>
+    <p class="txt_ambiance5">Des jeux comme Silent Hill 2 ou Outlast font essentiellement appel à un plaisir par et de la privation qui l’emporte sur toute autre forme de satisfaction. Il est offert au joueur la possibilité du frisson plaisant procuré par la tension du manque, par un sentiment certain de vulnérabilité. Ce plaisir négatif, naissant de la privation, est la conséquence de notre désir de conservation de notre personnage.</p>
+    <button class="btn_skip" onclick="skipTxtAmbiance()" id="skipAmbiance"><i class="bi bi-skip-forward"></i>Skip</button>
   </div>
   <div class="overlay_ambiance">
     <img src="./assets/images/png/jfstorjatkd91.png" alt="Creepy doll head" class="doll_jumpscare">
@@ -137,6 +140,14 @@
     <span></span>
     <p>Turn on the light</p>
   </div>
+  <section class="overlay_rythme">
+    <p  onclick="rythme1()">Follow lights</p>
+    <section class="light_rythme">
+    <div class="death_overlay"></div>
+    <div class="cd_rythme"></div>
+    <div class="testyouknow"></div>
+  </section>
+  </section>
   <script src="./assets/js/gsap.js"></script>
   <script src="./assets/js/pointer.js"></script>
   <!-- <script src="./assets/js/loader.js"></script> -->
