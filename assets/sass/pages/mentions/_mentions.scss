@@ -1,0 +1,52 @@
+.mentions {
+    background: $dark-red;
+    hr {
+        margin-block: 2rem;
+        border: 0;
+        height: 1px;
+        filter: drop-shadow(0px 0px 8px rgba(255, 0, 0, 0.6));
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.75), rgba(255, 0, 0, 0));
+    }
+    .texte {
+        padding: 50px;
+        margin: 50px;
+        font-size: 16px;
+        line-height: 1.6;
+        font-family: $subtitle;
+        text-align: left;
+        background: $background;
+        color: $white;
+        filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+        border-radius: 10px;
+        p{
+            margin-block: 5vh;
+        }
+        h2{
+            font-family: $texte;
+            text-transform: uppercase;
+            color: $light-red;
+            text-decoration: underline;
+            margin-block: 2vh;
+        }
+        a{
+            color: $white;
+            text-decoration: underline;
+            transition: all 0.3s;
+            &:hover{
+                color: $light-red;
+            }
+        }
+        b{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        h1{
+            font-family: $texte;
+            font-size: 2rem;
+            margin-block-end: 2vh;
+            text-transform: uppercase;
+            text-align: center;
+            color: $light-red;
+        }
+    }
+}
