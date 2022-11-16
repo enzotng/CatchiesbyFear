@@ -284,4 +284,3 @@ function finishRythme() {
     }, 3000);
   }, 15000);
 }
-
