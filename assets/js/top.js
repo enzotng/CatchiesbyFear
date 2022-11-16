@@ -4,9 +4,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    boutonHaut.style.display = "block";
+    boutonHaut.style.opacity = "1";
   } else {
-    boutonHaut.style.display = "none";
+    boutonHaut.style.opacity = "0";
   }
 }
 

@@ -60,18 +60,17 @@ button{
 }
 
 .backToTop {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 50px;
   z-index: 99;
   border: none;
   outline: none;
+  opacity: 0;
   background: $dark-red;
-  cursor: pointer;
   padding: 15px;
   border-radius: 50%;
-  transition: all 0.3s;
+  transition: opacity 0.3s ease-in-out;
   color: $white;
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   &:hover{
