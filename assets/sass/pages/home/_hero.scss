@@ -262,10 +262,22 @@
     z-index: 7;
     width: 70vw;
     transition: clip-path 0.5s cubic-bezier(0,0,.2,.8);
-
+    button{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    iframe{
+      opacity: 0;
+      height: 65vh;
+      aspect-ratio: 16/9;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
     p{
       opacity: 0;
-      font-size: clamp(0.8em, 2.5vw,1.55em);
+      font-size: clamp(0.8em, 1.2vw,1.4em);
       font-family: 'Monospace regular';
       color: $white;
       width: 100%;
@@ -273,7 +285,7 @@
       transition: opacity 0.5s linear;
       line-height: 1.40;
       z-index: -1;
-      margin-bottom: 1vh;
+      margin-bottom: 15vh;
       &:nth-of-type(n+3){
         position: absolute;
         top: 50%; left: 50%; 

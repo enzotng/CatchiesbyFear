@@ -25,8 +25,8 @@ let tlWindow = gsap.timeline({paused: true, onComplete: windowBis})
 
 
 let tlWindowBis = gsap.timeline({paused: true})
-.to('.wrap_txt_ambiance p:nth-of-type(1)', {"opacity": "1"}, '<1.5')
-.to('.wrap_txt_ambiance p:nth-of-type(2)', {"opacity": "1"}, '<2')
+.to('.txt_ambiance1', {"opacity": "1"}, '<1.5')
+.to('.txt_ambiance2', {"opacity": "1"}, '<2')
 .to('.wrap_txt_ambiance button', {"opacity": "1"}, '<2.5')
 
 
@@ -36,6 +36,7 @@ function windowBis() {
 
 let tlWindow2 = gsap.timeline({paused: true})
 .to('.wrap_txt_ambiance p', {"opacity": "0"})
+.to('.wrap_txt_ambiance iframe', {"opacity": "0"}, "<")
 .to('.wrap_txt_ambiance button', {"opacity": "0"}, "<0.1")
 .to('.overlay_ambiance', {"display": "block"})
 .to('.overlay_ambiance', {"background": "rgb(0 0 0 0.95)"}, '<0.1')
@@ -93,11 +94,12 @@ let tlWindow4= gsap.timeline({paused: true})
 .to('.overlay_ambiance', {"background": "black"})
 .to('.overlay_ambiance', {"background": "white"}, "<0.1")
 .to('.overlay_ambiance', {"display": "none"}, "<0.2")
-.to('.wrap_txt_ambiance p:nth-of-type(4)', {"opacity": "1"})
+.to('.wrap_txt_ambiance iframe', {"opacity": "1"})
 .to('.wrap_txt_ambiance button', {"opacity": "1"}, "<4")
 
 let tlWindow7= gsap.timeline({paused: true})
 .to('.wrap_txt_ambiance p', {"opacity": "0"})
+.to('.wrap_txt_ambiance iframe', {"opacity": "0"}, "<")
 .to('.wrap_txt_ambiance button', {"opacity": "0"}, "<0.1")
 .to('.overlay_ambiance', {"display": "block"})
 .to('.light_switch', {"display": "block"}, "<")
@@ -109,7 +111,7 @@ let tlWindow3 = gsap.timeline({paused: true})
 .to('.overlay_ambiance', {"background": "black"})
 .to('.overlay_ambiance', {"background": "white"}, "<0.1")
 .to('.overlay_ambiance', {"display": "none"}, "<0.2")
-.to('.wrap_txt_ambiance p:nth-of-type(3)', {"opacity": "1"})
+.to('.txt_ambiance3', {"opacity": "1"})
 .to('.wrap_txt_ambiance button', {"opacity": "1"}, '<2.5')
 
 
@@ -127,8 +129,9 @@ let tlWindow5 = gsap.timeline({paused: true, onComplete: closeWindow})
 .to('.overlay_ambiance', {"background": "black"})
 .to('.overlay_ambiance', {"background": "white"}, "<0.1")
 .to('.overlay_ambiance', {"display": "none"}, "<0.2")
-.to('.wrap_txt_ambiance p:nth-of-type(5)', {"opacity": "1"})
+.to('.txt_ambiance5', {"opacity": "1"})
 .to('.wrap_txt_ambiance p', {"opacity": "0"}, '<20')
+.to('.wrap_txt_ambiance iframe', {"opacity": "0"}, '<')
 .to('.creepy_doll_ambiance', {"top": "120vh"})
 .to('.overlay_ambiance', {"display": "block"})
 .to('.overlay_ambiance', {"background": "rgb(0 0 0 0.95)"}, '<0.1')
@@ -147,8 +150,9 @@ let tlWindow5 = gsap.timeline({paused: true, onComplete: closeWindow})
 function closeWindow() {
   tlWindow.reverse()
   setTimeout(() => {
+    console.log('wesh');
     document.location.reload()
-  }, 5000);
+  }, 1000);
 }
 
 let tlCadavre = gsap.timeline({paused: true})
@@ -227,6 +231,9 @@ function smileReverse(){
   setTimeout(() => {
     document.querySelector('.overlay_ambiance').style.display = "none"
     document.querySelector('.overlay_ambiance').style.overflow = "hidden"
+    setTimeout(() => {
+      document.location.reload()
+    }, 1000);
   }, 2000);
 
 }
@@ -254,7 +261,7 @@ function skipRythme() {
   compteur3 += 1
 }
 
-let tlRythme3 = gsap.timeline({paused: true})
+let tlRythme3 = gsap.timeline({paused: true, onComplete: finishRythme})
 .to('.cd_rythme', {"background": "radial-gradient(circle 15vmax,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.5) 80%,rgba(0, 0, 0, 0.95) 100%)"}, "<0.1")
 .to('.light_rythme', {"top": "300vh", duration:2})
 .to('.overlay_rythme', {"height": "400vh", duration:2}, "<")
@@ -265,8 +272,11 @@ let tlRythme3 = gsap.timeline({paused: true})
 
 
 function finishRythme() {
+  setTimeout(() => {
+    tlLooseRythme.play()
     setTimeout(() => {
       document.location.reload()
     }, 3000);
+  }, 15000);
 }
 

@@ -15,7 +15,7 @@ function skipLoader() {
     setTimeout(() => {
         loader.style.display = "none" 
         setTimeout(() => {
-            document.location.href = "index.html"
+            document.location.href = "home.html"
         }, 750);
     }, 1000);
 }
