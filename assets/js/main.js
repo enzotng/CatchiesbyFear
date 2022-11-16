@@ -146,6 +146,9 @@ let tlWindow5 = gsap.timeline({paused: true, onComplete: closeWindow})
 
 function closeWindow() {
   tlWindow.reverse()
+  setTimeout(() => {
+    document.location.reload()
+  }, 5000);
 }
 
 let tlCadavre = gsap.timeline({paused: true})
@@ -262,8 +265,8 @@ let tlRythme3 = gsap.timeline({paused: true})
 
 
 function finishRythme() {
-  setTimeout(() => {
-    tlLooseRythme.play()
-  }, 10000);
+    setTimeout(() => {
+      document.location.reload()
+    }, 3000);
 }
 

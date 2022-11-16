@@ -14,9 +14,9 @@ function skipLoader() {
     loader.style.opacity = "0"
     setTimeout(() => {
         loader.style.display = "none" 
-        hero.style.display = "flex" 
-        hero.style.opacity = "1"
-        document.querySelector('.flashlight_css').href = "./assets/css/flashlight.css"
+        setTimeout(() => {
+            document.location.href = "index.html"
+        }, 750);
     }, 1000);
 }
 
