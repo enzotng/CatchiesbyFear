@@ -1,161 +1,169 @@
-.hero{
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    // display: none;
+.hero {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  // display: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  // opacity: 0;
+  transition: opacity 0.5s ease;
+  .cadavre {
+    transform: rotateY(180deg);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 35%;
+    filter: drop-shadow(0px 0px 5px $dark-red);
+  }
+
+  h1 {
+    animation: animationHeading 4s ease-in-out 0s infinite normal forwards;
+  }
+
+  .creepy_smile {
+    width: 17%;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    &:hover {
+      animation: glitch 0.25s linear infinite;
+    }
+  }
+  .eyes {
+    width: 60px;
+    height: 15px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    // opacity: 0;
-    transition: opacity 0.5s ease;
-    .cadavre{
-      transform: rotateY(180deg);
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 35%;
-      filter: drop-shadow(0px 0px 5px $dark-red);
+    justify-content: space-between;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    z-index: 2;
+    opacity: 1;
+    span {
+      width: 15px;
+      border-radius: 50%;
+      aspect-ratio: 1;
+      background-color: $red;
+      animation: eyes 5s infinite;
     }
-    .creepy_smile{
-      width: 17%;
-      position: absolute;
-      top: 20px;
-      right: 70px;
-      &:hover{
-        animation: glitch 0.25s linear infinite;
-      }
-    }
-    .eyes{
-        width: 60px;
-        height: 15px;
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        top: 100px;
-        left: 70px;
-        z-index: 2;
-        opacity: 1;
-        span{
-            width: 15px;
-            border-radius: 50%;
-            aspect-ratio: 1;
-            background-color: $red;
-            animation: eyes 5s infinite;
-        }
-    }
+  }
 }
 
-.wrap_ambiance{
+.wrap_ambiance {
   display: none;
   opacity: 0;
   z-index: 6;
   width: 100vw;
   height: 100vh;
   position: absolute;
-  top: 50%; left: 50%; 
-    transform: translate(-50%, -50%);
-  .creepy_doll_ambiance{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .creepy_doll_ambiance {
     position: absolute;
     width: 75px;
-    left: 50%; 
+    left: 50%;
     top: -222px;
     transform: translateX(-50%);
     animation: rotateDoll 2.5s cubic-bezier(0.49, 0.17, 0.54, 1) infinite;
   }
   .lamp {
-    position:absolute;
-    width:150px;
-    bottom:0;
-}
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+  }
 
-.lamp {
-    height:95vh;
-}
+  .lamp {
+    height: 95vh;
+  }
 
-.lamp1{
-  left: 5vw;
-}
+  .lamp1 {
+    left: 5vw;
+  }
 
-.lamp2{
-  right: 5vw;
-  transform-origin: bottom;
-  transform: rotateY(180deg);
-}
+  .lamp2 {
+    right: 5vw;
+    transform-origin: bottom;
+    transform: rotateY(180deg);
+  }
 
-.post, .curve, .socket, .light {
-    position:absolute;
-}
+  .post,
+  .curve,
+  .socket,
+  .light {
+    position: absolute;
+  }
 
-.post {
-    height:100%;
-    width:10px;
-    background:#070707;
-    left:30px;
-    border-right:5px solid #70643e;
-}
+  .post {
+    height: 100%;
+    width: 10px;
+    background: #070707;
+    left: 30px;
+    border-right: 5px solid #70643e;
+  }
 
-.curve {
-    overflow:hidden;
-    width:100%;
-    left:0;
-    top:20px;
-    height:100px;
-    transform:rotate(-10deg);
-}
+  .curve {
+    overflow: hidden;
+    width: 100%;
+    left: 0;
+    top: 20px;
+    height: 100px;
+    transform: rotate(-10deg);
+  }
 
-.curve:before, .curve:after {
-    content:'';
-    position:absolute;
-    height:100%;
-    width:250px;
-    left:-50px;
-    border-radius:50%;
-}
+  .curve:before,
+  .curve:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 250px;
+    left: -50px;
+    border-radius: 50%;
+  }
 
-.curve:before {
-    top:0;
-    border-top:10px solid #070707;
-}
+  .curve:before {
+    top: 0;
+    border-top: 10px solid #070707;
+  }
 
-.curve:after {
-    top:6px;
-    border-top:5px solid #70643e;
-}
+  .curve:after {
+    top: 6px;
+    border-top: 5px solid #70643e;
+  }
 
-.socket {
-    width:15px;
-    height:0;
-    border:solid transparent;
-    border-width:20px 10px;
-    border-bottom-color:#070707;
-    top:0;
-    right:13px;
-}
+  .socket {
+    width: 15px;
+    height: 0;
+    border: solid transparent;
+    border-width: 20px 10px;
+    border-bottom-color: #070707;
+    top: 0;
+    right: 13px;
+  }
 
-.socket:after {
-    content:'';
-    position:absolute;
-    top:14px;
-    left:-17px;
-    height:50px;
-    width:50px;
-    background:#fff39b;
-    color:#fff39b;
-    border-radius:50%;
-    box-shadow:0 0 10px;
-    animation:flicker 3s ease-out infinite;
-    z-index:-1;
+  .socket:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -17px;
+    height: 50px;
+    width: 50px;
+    background: #fff39b;
+    color: #fff39b;
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
+    animation: flicker 3s ease-out infinite;
+    z-index: -1;
+  }
 }
-
-}
-
 
 @keyframes flicker {
   0% {
     box-shadow: 0px 0px 3px;
   }
-  
+
   2% {
     box-shadow: 0px 0px 29px;
   }
@@ -163,7 +171,7 @@
     box-shadow: 0px 0px 3px;
   }
   9% {
-    opacity:1;
+    opacity: 1;
     box-shadow: 0px 0px 29px;
   }
   12% {
@@ -178,15 +186,15 @@
   30% {
     box-shadow: 0px 0px 29px;
   }
-  
+
   70% {
     box-shadow: 0px 0px 20px;
   }
-  
+
   72% {
-    box-shadow:0px 0px 6px;
+    box-shadow: 0px 0px 6px;
   }
-  
+
   77% {
     box-shadow: 0px 0px 26px;
   }
@@ -196,195 +204,211 @@
 }
 
 @keyframes eyes {
-    0% {
-      height: 15px;
-    }
-    1% {
-      height: 0px;
-    }
-    2% {
-      height: 15px;
-    }
-    100% {
-        height: 15px;
-      }
+  0% {
+    height: 15px;
   }
-  @keyframes rotateDoll {
-    0% {
-      transform: rotate(15deg);
-    }
-    50% {
-      transform: rotate(-15deg);
-    }
-    100% {
-      transform: rotate(15deg);
-    }
+  1% {
+    height: 0px;
+  }
+  2% {
+    height: 15px;
+  }
+  100% {
+    height: 15px;
+  }
+}
+@keyframes rotateDoll {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes tremblement {
+  0% {
+    transform: rotate(0.5deg);
+  }
+  50% {
+    transform: rotate(-0.5deg);
+  }
+  100% {
+    transform: rotate(0.5deg);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    filter: drop-shadow(5px 5px 0px $light-red);
+  }
+  20% {
+    filter: drop-shadow(-5px -5px 0px $light-red);
+  }
+  40% {
+    filter: drop-shadow(-5px 5px 0px $light-red);
+  }
+  60% {
+    filter: drop-shadow(5px -5px 0px $light-red);
+  }
+  80% {
+    filter: drop-shadow(0px -5px 0px $light-red);
+  }
+  10% {
+    filter: drop-shadow(0px 5px 0px $light-red);
+  }
+}
+
+@keyframes animationHeading {
+  0% {
+    filter: drop-shadow(0px 0px 100px $light-red);
   }
 
-  @keyframes tremblement {
-    0% {
-      transform: rotate(0.5deg);
-    }
-    50% {
-      transform: rotate(-0.5deg);
-    }
-    100% {
-      transform: rotate(0.5deg);
-    }
+  50% {
+    filter: drop-shadow(0px 0px 0px $light-red);
   }
 
-  @keyframes glitch {
-    0% {
-      filter: drop-shadow(5px 5px 0px $light-red);
-    }
-    20% {
-      filter: drop-shadow(-5px -5px 0px $light-red);
-    }
-    40% {
-      filter: drop-shadow(-5px 5px 0px $light-red);
-    }
-    60% {
-      filter: drop-shadow(5px -5px 0px $light-red);
-    }
-    80% {
-      filter: drop-shadow(0px -5px 0px $light-red);
-    } 
-    10% {
-      filter: drop-shadow(0px 5px 0px $light-red);
-    } 
+  100% {
+    filter: drop-shadow(0px 0px 100px $light-red);
   }
+}
 
-  .wrap_txt_ambiance{
-    clip-path: inset(0 0 0 0);
+.wrap_txt_ambiance {
+  clip-path: inset(0 0 0 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+  width: 70vw;
+  transition: clip-path 0.5s cubic-bezier(0, 0, 0.2, 0.8);
+  button {
     position: absolute;
-    top: 50%; left: 50%; 
-    transform: translate(-50%, -50%);
-    z-index: 7;
-    width: 70vw;
-    transition: clip-path 0.5s cubic-bezier(0,0,.2,.8);
-    button{
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-    iframe{
-      opacity: 0;
-      height: 65vh;
-      aspect-ratio: 16/9;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    p{
-      opacity: 0;
-      font-size: clamp(0.8em, 1.2vw,1.4em);
-      font-family: 'Monospace regular';
-      color: $white;
-      width: 100%;
-      mix-blend-mode: difference;
-      transition: opacity 0.5s linear;
-      line-height: 1.40;
-      z-index: -1;
-      margin-bottom: 15vh;
-      &:nth-of-type(n+3){
-        position: absolute;
-        top: 50%; left: 50%; 
-    transform: translate(-50%, -50%);
-      }
-    }
+    bottom: 0;
+    right: 0;
   }
-  .overlay_ambiance{
-    clip-path: inset(0 0 0 0);
-    width: 100%;
-    height: 100vh;
-    background: white;
+  iframe {
+    opacity: 0;
+    height: 65vh;
+    aspect-ratio: 16/9;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 6;
-    display: none;
-    transition: clip-path 0.5s cubic-bezier(0,0,.2,.8);
-    .doll_jumpscare{
+  }
+  p {
+    opacity: 0;
+    font-size: clamp(0.8em, 1.2vw, 1.4em);
+    font-family: "Monospace regular";
+    color: $white;
+    width: 100%;
+    mix-blend-mode: difference;
+    transition: opacity 0.5s linear;
+    line-height: 1.4;
+    z-index: -1;
+    margin-bottom: 15vh;
+    &:nth-of-type(n + 3) {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
-      height: 0vh;
-      opacity: 1;
-      z-index: 8;
-      transition: height 0.75s ease-in-out,
-                  opacity 0.75s ease-in-out;
-      animation: rotateDoll 0.1s cubic-bezier(0.49, 0.17, 0.54, 1) infinite;
+      transform: translate(-50%, -50%);
     }
   }
-
-  .light_switch{
-    width: 80px;
-    height: 40px;
-    border-radius: 20px;
-    outline: 2px solid $white;
-    border: 4px solid $background;
-    background: $white;
+}
+.overlay_ambiance {
+  clip-path: inset(0 0 0 0);
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  display: none;
+  transition: clip-path 0.5s cubic-bezier(0, 0, 0.2, 0.8);
+  .doll_jumpscare {
     position: absolute;
-    top: 50%; left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 7;
-    opacity: 0;
-    span{
-      content: "";
-      position: absolute;
-      height: 25px;
-      top: 3px;
-      left: 3px;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background: $background;
-    }
-    p{
-      position: absolute;
-      bottom: -30px;
-      left: -50%;
-      font-size: 0.8em;
-      width: 200%;
-      text-align: center;
-    }
+    height: 0vh;
+    opacity: 1;
+    z-index: 8;
+    transition: height 0.75s ease-in-out, opacity 0.75s ease-in-out;
+    animation: rotateDoll 0.1s cubic-bezier(0.49, 0.17, 0.54, 1) infinite;
   }
-.overlay_rythme{
+}
+
+.light_switch {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  outline: 2px solid $white;
+  border: 4px solid $background;
+  background: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+  opacity: 0;
+  span {
+    content: "";
+    position: absolute;
+    height: 25px;
+    top: 3px;
+    left: 3px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: $background;
+  }
+  p {
+    position: absolute;
+    bottom: -30px;
+    left: -50%;
+    font-size: 0.8em;
+    width: 200%;
+    text-align: center;
+  }
+}
+.overlay_rythme {
   width: 100%;
   height: 100vh;
   display: none;
   opacity: 0;
   position: absolute;
   clip-path: inset(0 0 0 0);
-    top: 0;
-    left: 0;
-    z-index: 7;
-    background-color: $white;
-    justify-content: center;
-    align-items: center;
-    color: $background;
-    button{
-      &#skipRythme1{
-        position: absolute;
-        top: 190vh;
-        color: $background;
-        z-index: 9;
-        &:hover{
-          color: $light-red;
-        }
+  top: 0;
+  left: 0;
+  z-index: 7;
+  background-color: $white;
+  justify-content: center;
+  align-items: center;
+  color: $background;
+  button {
+    &#skipRythme1 {
+      position: absolute;
+      top: 190vh;
+      color: $background;
+      z-index: 9;
+      &:hover {
+        color: $light-red;
       }
     }
-    .videoRythme{
-      opacity: 1;
-      height: 60vh;
-      aspect-ratio: 16/9;
-      position: absolute;
-      top: 220vh;
-    }
-    p{
+  }
+  .videoRythme {
+    opacity: 1;
+    height: 60vh;
+    aspect-ratio: 16/9;
+    position: absolute;
+    top: 220vh;
+  }
+  p {
     z-index: 8;
     font-size: 1.5em;
-    &:nth-of-type(n+2){
+    &:nth-of-type(n + 2) {
       opacity: 0;
       position: absolute;
       font-family: $subtitle;
@@ -392,44 +416,40 @@
       font-size: 1.3em;
       font-weight: bold;
     }
-    &:nth-of-type(2){
+    &:nth-of-type(2) {
       top: 125vh;
     }
-    &:nth-of-type(3){
+    &:nth-of-type(3) {
       top: 325vh;
     }
-    }
-    .light_rythme{
+  }
+  .light_rythme {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    .death_overlay {
       position: absolute;
-      height: 100vh;
-      width: 100%;
       left: 0;
-      top: 0;
-      .death_overlay{
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: black;
-        top: -100vh;
-        opacity: 0.95;
-      }
-      .cd_rythme{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: radial-gradient(circle 50vmax,
-                rgba(0, 0, 0, 0) 0%,
-                rgba(0, 0, 0, 0.5) 80%,
-                rgba(0, 0, 0, 0.95) 100%);
-      }
+      width: 100%;
+      height: 100vh;
+      background: black;
+      top: -100vh;
+      opacity: 0.95;
     }
-  
+    .cd_rythme {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: radial-gradient(circle 50vmax, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 0.95) 100%);
+    }
+  }
 }
 
-.overlay_cadavre{
+.overlay_cadavre {
   width: 100%;
   z-index: 15;
   height: 100vh;
