@@ -11,17 +11,18 @@
   z-index: 5;
   .loader_txt{
     position: absolute;
-    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
     p{
       font-family: $subtitle;
       line-height: 1.2;
       font-size: clamp(1em, 1.525vw, 1.5em);
       opacity: 0;
       padding-bottom: 30px;
-    }
-    button{
-      position: absolute;
-      left: 42%;
+      text-align: center;
     }
   }
   .wrap_loader {

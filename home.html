@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <audio src="./assets/sounds/girl_scream_shortwav-14510.mp3" preload="auto" type="audio/mpeg">
+  <!-- <audio src="./assets/sounds/girl_scream_shortwav-14510.mp3" preload="auto" type="audio/mpeg">
     <embed src="./assets/sounds/girl_scream_shortwav-14510.mp3" hidden="true" type="audio/mpeg">
     <source src="./assets/sounds/girl_scream_shortwav-14510.mp3" type="audio/mpeg">
   </audio>
@@ -21,7 +21,7 @@
     type="audio/mpeg">
     <embed src="./assets/sounds/Loyalty_Freak_Music_-_07_-_A_really_dark_alley.mp3" hidden="true" type="audio/mpeg">
     <source src="./assets/sounds/Loyalty_Freak_Music_-_07_-_A_really_dark_alley.mp3" type="audio/mpeg">
-  </audio>
+  </audio> -->
   <div class="pointer"></div>
   <section class="hero">
     <h1>Catchies by Fear</h1>
@@ -29,7 +29,7 @@
       <span></span>
       <span></span>
     </div>
-    <img src="./assets/images/png/artworks-cqyhPfZQlBT5oMcz-awZTlg-t500x500-removebg-preview.png" alt=""
+    <img src="./assets/images/png/artworks-cqyhPfZQlBT5oMcz-awZTlg-t500x500-removebg-preview.png" alt="Tête"
       class="creepy_smile" onclick="smileMove()">
     <section class="wrap_window" onmouseover="eyesDisepearOver()" onmouseout="eyesDisepearOut()">
       <div class="window">
@@ -74,9 +74,16 @@
         <div class="wall_horizontal"></div>
       </div>
     </section>
-    <img src="./assets/images/png/PngItem_1279488.png" alt="transparent video game cadaver" class="cadavre"
-      onclick="cadavreMove()">
+    <img src="./assets/images/png/dead-guy-png-4-Transparent-Images-removebg-preview-removebg-preview.png"
+      alt="transparent video game cadaver" class="cadavre" onclick="cadavreMove()" title="Voir les articles">
 
+    <a href="jeu.html"><img src="./assets/images/png/doorHorror.png" alt="Door Horror" class="door"
+        title="Lancer le jeu"></a>
+
+    <div class="footer_mentions">
+      <a href="mentionslegales.html" target="_self">Mentions Légales</a>
+      <p>Copyright © 2022 Catchies by Fear. Tous Droits Réservés.</p>
+    </div>
   </section>
   <section class="wrap_ambiance">
     <img src="./assets/images/png/creepy-doll.png" alt="Creepy doll hanging" class="creepy_doll_ambiance">
@@ -109,7 +116,7 @@
       Il faut que l'utilisateur sente tout contrôle lui échapper, comme si il était jeté en plein
       milieu de la mer sans repères ni terres à l’horizon, dépourvu de tout ancrage à ce qu’il connaît. Cela place
       directement l’utilisateur dans un monde différent, un monde dangereux et terrifiant.
-      <br />
+      <br>
       Des jeux comme Silent Hill 2 ou Outlast font essentiellement appel à un plaisir par et de
       la privation qui l’emporte sur toute autre forme de satisfaction. Il est offert au joueur la possibilité du
       frisson plaisant procuré par la tension du manque, par un sentiment certain de vulnérabilité. Ce plaisir négatif,
@@ -129,16 +136,16 @@
     <p>Suivez la lumière</p>
     <p>Le rythme est un aspect crucial pour un jeu d’horreur. Le maîtriser, c’est maîtriser l’art de l’horreur.
       Aller à contre courant, prendre à revers l’utilisateur dans le but de le mettre mal à l’aise.
-      <br />
-      <br />
+      <br>
+      <br>
       La mécanique d’horreur la plus efficace et allant de mèche avec la notion de rythme et celle de la miss direction.
       C’est le fait de pousser l’utilisateur à une action qui va. Quand il retourne à sa position initiale, il s'attend
       à un jumpscare. Or, c’est là qu’une miss direction est puissante car quand l’utilisateur verra qu’il n’y a pas de
       jumpscare, il baissera sa garde et c’est là qu'il faudra le surprendre. Il faut le terroriser quand il est dans sa
       zone de confort, toujours dans l’optique de le mettre dans une situation où le danger est partout, sans forcément
       le matérialiser.
-      <br />
-      <br />
+      <br>
+      <br>
     </p>
     <iframe src="https://www.youtube.com/embed/UE_z07ubRZQ" title="Interview Catchies Mr Tiboute"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
@@ -149,8 +156,8 @@
       d’angoisse procure un important sentiment de bien-être et de soulagement.
       C’est cette alternance entre sens en éveils et calme qui intéresse les joueurs, la plupart étant en recherche de
       sensations fortes.
-      <br />
-      <br />
+      <br>
+      <br>
     </p>
     <button class="btn_skip" onclick="skipRythme()" id="skipRythme1"><i class="bi bi-skip-forward"></i>Skip</button>
     <section class="light_rythme">
@@ -162,7 +169,6 @@
   <section class="overlay_cadavre"></section>
   <script src="./assets/js/gsap.js"></script>
   <script src="./assets/js/pointer.js"></script>
-  <!-- <script src="./assets/js/loader.js"></script> -->
   <script src="assets/js/main.js"></script>
   <script src="./assets/js/flashlight.js"></script>
 </body>
