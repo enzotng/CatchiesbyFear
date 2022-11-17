@@ -8,14 +8,15 @@
   <link rel="shortcut icon" href="assets/images/png/icone.png" type="image/x-icon">
   <title>The Game - Catchies by Fear</title>
 
+  <link rel="stylesheet" href="./assets/TemplateData/style.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/nocdr.css">
 </head>
 
 <body class="article_jeu">
-  <audio src="./assets/sounds/Loyalty_Freak_Music_-_07_-_A_really_dark_alley.mp3" preload="auto" autoplay loop type="audio/mpeg">
-    <embed src="./assets/sounds/Loyalty_Freak_Music_-_07_-_A_really_dark_alley.mp3"hidden="true" type="audio/mpeg">
-    <source src="./assets/sounds/Loyalty_Freak_Music_-_07_-_A_really_dark_alley.mp3" type="audio/mpeg">
+  <audio src="./assets/sounds/girl_scream_shortwav-14510.mp3" preload="auto" type="audio/mpeg">
+    <embed src="./assets/sounds/girl_scream_shortwav-14510.mp3" hidden="true" type="audio/mpeg">
+    <source src="./assets/sounds/girl_scream_shortwav-14510.mp3" type="audio/mpeg">
   </audio>
 
   <header>
@@ -25,10 +26,45 @@
 
     <div class="divJeu">
       <a href="#epilogue" class="btnJeu"><i class="bi bi-book"></i>Voir l'épilogue</a>
-      <a href="home.html" class="btnJeu"><i class="bi bi-house"></i>Revenir à l'accueil</a>
+      <a href="#jouer" class="btnJeu"><i class="bi bi-play-circle"></i>Comment jouer</a>
     </div>
     <div class="jeu">
-      <button type="submit" class="btnLancerJeu"><i class="bi bi-play-fill"></i>Lancer le jeu</button>
+      <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-mobile-warning">
+        WebGL builds are not supported on mobile devices.
+      </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Catchies The Game</div>
+      </div>
+    </div>
+    </div>
+    <div class="texte" id="jouer">
+      <h1>Comment jouer ?</h1>
+      <hr>
+      <p>
+        De simple thématique, l’horreur est devenue un type de jeu, qui a réussi à avoir une fanbase solide tout au long
+        de ces années. Cette réussite n’est pas seulement due au fait qu’on aime avoir peur. À mon avis, le jeu vidéo
+        d’horreur et ses sous-genres permettent de raconter des histoires différentes, pas celles de héros qui, par le
+        courage et une très grosse épée, vaincront n’importe quel adversaire, mais des histoires où nous, simples
+        mortels, affrontons avec ce que l’on a des choses terrifiantes. Des choses qui nous dépassent et qu’on
+        n’arriverait jamais à appréhender en temps normal, c’est ce que je trouve cool. Peu importe ce pourquoi nous
+        jouons aux jeux vidéo d’horreur, nous ne serons jamais réellement indifférents face à ce type de jeu vidéo et je
+        suis intimement persuadé que c’est ce qui fait la plus grande force du jeu vidéo horrifique. Celui de toujours
+        faire ressentir des émotions au joueur, d’une façon plus intense qu’un autre type de jeu vidéo.
+      </p><br>
+      <p>Et comme le dirait Guillaume Baychelier, vidéaste plasticien : "apprendre à porter un regard sensible et sans
+        terreur sur un terrible que l’on sait être de l’ordre du simulacre, dans l’espoir de se prémunir contre la
+        survenue d’un effroi bien réel".
+      </p>
     </div>
     <div class="texte" id="epilogue">
       <h1>Épilogue</h1>
@@ -58,6 +94,57 @@
   <button onclick="hautFunction()" class="backToTop" id="btnTop" title="Go to top"><i class="bi bi-arrow-up"></i></button>
   <div class="pointer"></div>
 
+    <script>
+      var buildUrl = "Build";
+      var loaderUrl = "./assets/"+ buildUrl + "/CatchiesGame.loader.js";
+      var config = {
+        dataUrl: "./assets/"+ buildUrl + "/CatchiesGame.data",
+        frameworkUrl: "./assets/"+ buildUrl + "/CatchiesGame.framework.js",
+        codeUrl: "./assets/"+ buildUrl + "/CatchiesGame.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Catchies by Fear",
+        productName: "Catchies The Game",
+        productVersion: "1",
+      };
+
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var mobileWarning = document.querySelector("#unity-mobile-warning");
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        config.devicePixelRatio = 1;
+        mobileWarning.style.display = "block";
+        setTimeout(() => {
+          mobileWarning.style.display = "none";
+        }, 5000);
+      } else {
+        canvas.style.width = "90vw";
+        canvas.style.height = "80vh";
+        canvas.style.borderRadius = "10px";
+        canvas.style.marginBottom = "2vh";
+      }
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          loadingBar.style.display = "none";
+          fullscreenButton.onclick = () => {
+            unityInstance.SetFullscreen(1);
+          };
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script>
   <script src="./assets/js/gsap.js"></script>
   <script src="./assets/js/top.js"></script>
   <script src="./assets/js/pointer.js"></script>

@@ -41,9 +41,7 @@
         height: 90vh;
         margin-block-end: 0;
         padding: 50px;
-        background-image: url('./../images/png/miniatureJeu.png');
-        background-size: cover;
-        background-repeat: none;
+        background: $background;
         margin: 50px;
         display: flex;
         justify-content: center;
